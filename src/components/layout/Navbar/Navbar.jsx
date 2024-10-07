@@ -14,8 +14,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <div className="text-2xl font-bold">
-          <span className="">PrimeWave</span>
+        <div className="text-4xl font-extrabold">
+          <span className=" text-black">PrimeWave</span>
         </div>
 
         {/* Contact Us Button */}
