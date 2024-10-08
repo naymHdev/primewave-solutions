@@ -10,6 +10,8 @@ import {
 import Link from "next/link";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <footer className="relative mt-20">
@@ -29,55 +31,75 @@ const Footer = () => {
             </h1>
             <p className="text-gray-700 mt-1 w-1/2">
               Helping Remodeling Contractors Grow with Modern High-Impact
-              Websites Tailored to Their Unique Needs🏡
+              Websites Tailored to Their Unique Needs.
             </p>
           </div>
           <nav className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20">
             <div>
               <h2 className="text-xl font-bold text-secondary">MAIN</h2>
               <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Contact Us</li>
+                <li className="hover:text-primary">
+                  <a href="">Home</a>
+                </li>
+                <li className="hover:text-primary">
+                  <a href="">About</a>
+                </li>
+                <li className="hover:text-primary">
+                  <a href="">Services</a>
+                </li>
+                <li className="hover:text-primary">
+                  <a href="">Portfolio</a>
+                </li>
+                <li className="hover:text-primary">
+                  <a href="">Contact Us</a>
+                </li>
               </ul>
             </div>
             <div>
               <h2 className="text-xl font-bold text-secondary">SERVICES</h2>
               <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li>Branding</li>
-                <li>Content</li>
-                <li>Design</li>
-                <li>Marketing</li>
-                <li>Strategy</li>
-                <li>Development</li>
+                <li className="hover:text-primary">Branding</li>
+                <li className="hover:text-primary">Content</li>
+                <li className="hover:text-primary">Design</li>
+                <li className="hover:text-primary">Marketing</li>
+                <li className="hover:text-primary">Strategy</li>
+                <li className="hover:text-primary">Development</li>
               </ul>
             </div>
             <div>
               <h2 className="text-xl font-bold text-secondary">INDUSTRIES</h2>
               <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li>Home Remodeling</li>
-                <li>Kitchen Remodeling</li>
-                <li>Bathroom Renovation</li>
-                <li>Flooring Installation</li>
-                <li>Home Painting</li>
-                <li>Landscaping Design</li>
-                <li>Energy-efficient Home Improvements</li>
-                <li>Accessibility Modifications</li>
+                <li className="hover:text-primary">Home Remodeling</li>
+                <li className="hover:text-primary">Kitchen Remodeling</li>
+                <li className="hover:text-primary">Bathroom Renovation</li>
+                <li className="hover:text-primary">Flooring Installation</li>
+                <li className="hover:text-primary">Home Painting</li>
+                <li className="hover:text-primary">Landscaping Design</li>
+                <li className="hover:text-primary">
+                  Energy-efficient Home Improvements
+                </li>
+                <li className="hover:text-primary">
+                  Accessibility Modifications
+                </li>
               </ul>
             </div>
             <div>
               <h2 className="text-xl font-bold text-secondary">CONTACT</h2>
               <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li>hello.primewave@gmail.com</li>
-                <li>+880 01770064053</li>
-                <li className="font-bold">Always Open</li>
+                <li className="hover:text-primary">
+                  hello.primewave@gmail.com
+                </li>
+                <li className="hover:text-primary">+880 01770064053</li>
+                <li className="font-extrabold text-secondary">Always Open</li>
               </ul>
             </div>
           </nav>
         </section>
       </footer>
+      <div className="container mx-auto px-4 md:px-0 flex items-center justify-between my-24 font-medium text-black">
+        <h3>© 2023 - {currentYear} Crafted. All Rights Reserved.</h3>
+        <p>Designed & Developed in PrimeWave.</p>
+      </div>
       <footer className="bg-secondary py-2 px-4 md:px-0">
         <section className="grid md:flex items-center justify-between container mx-auto">
           <div className="grid md:flex items-center md:space-x-3 space-y-2 md:space-y-0 font-medium">

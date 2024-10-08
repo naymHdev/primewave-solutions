@@ -9,8 +9,6 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
-import Image from "next/image";
-import logo from "../../../../public/images/PrimeWave-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
