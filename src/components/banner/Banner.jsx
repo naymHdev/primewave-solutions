@@ -18,7 +18,7 @@ const Banner = () => {
       </div>
       <div className="absolute top-1/4">
         <div className=" text-center w-9/12 mx-auto">
-          <h1 className="text-4xl font-extrabold text-black">
+          <h1 className="text-4xl text-black font-black">
             Building <span className="text-primary">Digital Foundations</span>{" "}
             for Remodeling
           </h1>

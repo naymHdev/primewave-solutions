@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-0">
         {/* Logo */}
         <div className="text-4xl font-extrabold">
-          <span className=" text-black">PrimeWave</span>
+          <span className="text-[#66A6EC] font-black font-montserrat">PrimeWave</span>
         </div>
 
         {/* Hamburger Menu Icon */}
