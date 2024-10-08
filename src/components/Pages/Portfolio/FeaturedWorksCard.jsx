@@ -6,16 +6,20 @@ const FeaturedWorksCard = ({ portfolio }) => {
   return (
     <>
       <div>
-        <Image
-          src={image}
-          alt={projectTitle}
-          layout="fill"
-          objectFit="cover"
-          priority={true}
-          quality={100}
-        />
-        <div className="absolute bottom-10 left-10 right-0 text-white">
-          <h3 className=" text-3xl font-bold">{projectTitle}</h3>
+        <div className="absolute inset-0">
+          <Image
+            src={image}
+            alt={projectTitle}
+            layout="fill"
+            objectFit="cover"
+            priority={true}
+            quality={100}
+            className="filter"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black bg-opacity-40" />
+        <div className="absolute bottom-0 left-0 z-0 p-7 text-white">
+          <h3 className=" text-2xl font-bold drop-shadow-lg">{projectTitle}</h3>
           <p className=" text-lg font-medium">{companyName}</p>
         </div>
       </div>

@@ -1,3 +1,4 @@
+"use client";
 import { works } from "@/data/featuredWorks";
 import FeaturedWorksCard from "./FeaturedWorksCard";
 

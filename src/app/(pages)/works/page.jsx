@@ -1,7 +1,7 @@
 import SectionName from "@/components/common/SectionName";
 import Portfolio from "@/components/Pages/Portfolio/Portfolio";
 
-const FeaturedWorks = () => {
+const Portfolios = () => {
   return (
     <>
       <div>
@@ -18,4 +18,4 @@ const FeaturedWorks = () => {
   );
 };
 
-export default FeaturedWorks;
+export default Portfolios;
