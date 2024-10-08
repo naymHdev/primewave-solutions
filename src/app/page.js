@@ -1,4 +1,5 @@
 import Banner from "@/components/banner/Banner";
+import OurService from "@/components/Pages/OurService/OurService";
 import FeaturedWork from "@/components/Pages/Portfolio/FeaturedWork";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Banner />
       <FeaturedWork />
+      <OurService />
     </main>
   );
 }

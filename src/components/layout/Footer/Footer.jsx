@@ -15,6 +15,7 @@ const Footer = () => {
   return (
     <>
       <footer className="relative mt-20">
+        <div className="border-b-2 border-secondary" />
         <section className="container mx-auto px-4 md:px-0 py-8">
           <div>
             <Image
@@ -120,7 +121,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="text-xl" />
+              <FaFacebook className="text-xl text-white" />
             </a>
             <a
               className="hover:-mt-10 transition-all duration-300 rounded-full p-2 bg-[#1267b6]"
@@ -128,7 +129,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="text-xl" />
+              <FaInstagram className="text-xl text-white" />
             </a>
             <a
               className="hover:-mt-10 transition-all duration-300 rounded-full p-2 bg-[#1267b6]"
@@ -136,7 +137,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-xl" />
+              <FaLinkedin className="text-xl text-white" />
             </a>
             <a
               className="hover:-mt-10 transition-all duration-300 rounded-full p-2 bg-[#1267b6]"
@@ -144,7 +145,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaWhatsapp className="text-xl" />
+              <FaWhatsapp className="text-xl text-white" />
             </a>
           </div>
         </section>
