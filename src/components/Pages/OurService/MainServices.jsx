@@ -52,7 +52,7 @@ const MainServices = () => {
                 ))}
                 <hr />
               </ul>
-              <button className="border border-white px-5 font-medium py-2 mt-8">
+              <button className="border border-white px-5 font-medium py-2 mt-6">
                 Learn More
               </button>
             </motion.div>

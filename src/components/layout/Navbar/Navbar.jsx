@@ -79,7 +79,7 @@ const Navbar = () => {
             Services
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="py-2 text-3xl font-bold hover:text-[#104F89]"
           >
             Contact Us
