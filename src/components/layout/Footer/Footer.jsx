@@ -58,7 +58,6 @@ const Footer = () => {
             <div>
               <h2 className="text-xl font-bold text-secondary">SERVICES</h2>
               <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li className="hover:text-primary">Branding</li>
                 <li className="hover:text-primary">Content</li>
                 <li className="hover:text-primary">Design</li>
                 <li className="hover:text-primary">Marketing</li>

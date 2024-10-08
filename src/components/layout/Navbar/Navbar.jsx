@@ -22,7 +22,9 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-0">
         {/* Logo */}
         <div className="text-4xl font-extrabold">
-          <span className="text-[#66A6EC] font-black font-montserrat">PrimeWave</span>
+          <span className="text-[#66A6EC] font-black font-montserrat">
+            PrimeWave
+          </span>
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -52,11 +54,12 @@ const Navbar = () => {
         {/* Menu Items */}
         <div className="flex flex-col items-end space-y-3 px-10">
           <a
-            href="#home"
+            href="/"
             className="py-2 text-3xl font-bold hover:text-[#104F89]"
           >
             Home
           </a>
+
           <a
             href="#about"
             className="py-2 text-3xl font-bold hover:text-[#104F89]"
@@ -64,16 +67,16 @@ const Navbar = () => {
             About
           </a>
           <a
-            href="#services"
+            href="/works"
+            className="py-2 text-3xl font-bold hover:text-[#104F89]"
+          >
+            Works
+          </a>
+          <a
+            href="/services"
             className="py-2 text-3xl font-bold hover:text-[#104F89]"
           >
             Services
-          </a>
-          <a
-            href="#portfolio"
-            className="py-2 text-3xl font-bold hover:text-[#104F89]"
-          >
-            Portfolio
           </a>
           <a
             href="#contact"

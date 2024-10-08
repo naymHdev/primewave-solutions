@@ -69,7 +69,7 @@ const Banner = () => {
             quality={100}
           />
           <h2 className="text-black font-bold">5.0</h2>
-          <p className="text-sm font-thin text-black">verified by Trustindex</p>
+          <p className="text-sm text-black">verified by Trustindex</p>
         </div>
       </div>
 
