@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-0">
         {/* Logo */}
         <div className="text-4xl font-extrabold">
-          <span className="text-[#66A6EC] font-black font-montserrat">
+          <span className="text-[#3491f5] font-black font-montserrat">
             PrimeWave
           </span>
         </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Hamburger Menu Icon */}
         <div className="">
           <button onClick={handleMenuToggle}>
-            <CiMenuFries className="h-8 w-8 text-[#10355D]" />
+            <CiMenuFries className="size-10 text-[#10355D]" />
           </button>
         </div>
       </div>
@@ -53,10 +53,7 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <div className="flex flex-col items-end space-y-3 px-10">
-          <a
-            href="/"
-            className="py-2 text-3xl font-bold hover:text-[#104F89]"
-          >
+          <a href="/" className="py-2 text-3xl font-bold hover:text-[#104F89]">
             Home
           </a>
 
