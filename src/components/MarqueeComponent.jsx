@@ -13,7 +13,7 @@ const MarqueeComponent = () => {
   ];
 
   return (
-    <div className="bg-[#3491F5] py-6 mt-24">
+    <div className="bg-legendary py-3 mt-24">
       <Marquee
         gradient={false}
         speed={60}
@@ -30,7 +30,7 @@ const MarqueeComponent = () => {
               priority={true}
               quality={100}
             />
-            <span className="text-white font-bold text-lg">{thought}</span>
+            <span className="font-bold text-lg">{thought}</span>
           </div>
         ))}
       </Marquee>

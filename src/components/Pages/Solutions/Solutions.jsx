@@ -38,8 +38,8 @@ const Solutions = () => {
               </div>
 
               {/* Right panel */}
-              <div className=" rounded-lg shadow-lg border border-[#3491F5]">
-                <div className=" flex gap-3 items-center bg-[#3491F5] rounded-t-lg p-6">
+              <div className=" rounded-lg shadow-lg border border-legendary">
+                <div className=" flex gap-3 items-center bg-legendary rounded-t-lg p-6">
                   <div className="text-5xl">
                     <Image
                       src="/images/PrimeWave-logo.png"
