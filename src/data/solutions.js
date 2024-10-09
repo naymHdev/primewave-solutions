@@ -17,7 +17,7 @@ export const solutionData = [
         "I have real experience, with real results.",
         "I'm the most affordable at my level.",
         "My work is high quality.",
-        "I have a huge portfolio (65+) of proven results.",
+        "I have a huge portfolio (25+) of proven results.",
       ],
     },
   },

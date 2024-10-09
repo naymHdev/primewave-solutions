@@ -14,8 +14,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="relative mt-20">
-        <div className="border-b-2 border-secondary" />
+      <footer className="relative mt-14">
         <section className="container mx-auto px-4 md:px-0 py-8">
           <div>
             <Image
