@@ -1,5 +1,6 @@
 import Image from "next/image";
 import banner from "../../../public/images/pixelcut-export.jpeg";
+import Button from "../common/Button";
 
 const Banner = () => {
   const currentYear = new Date().getFullYear();
@@ -40,13 +41,12 @@ const Banner = () => {
             and fuel long-term business growth.
           </p>
         </div>
-        <div className="flex items-center justify-center gap-1 md:gap-6 mt-8">
-          <button className="text-white bg-secondary px-6 py-3 font-medium text-xl">
-            SERVICES
-          </button>
-          <button className="text-white bg-primary px-8 py-3 font-medium text-xl">
-            BOOK A CALL
-          </button>
+        <div className="flex items-center justify-center mt-8">
+          <Button
+            label="BOOK A CALL"
+            bg="bg-primary"
+            hover="hover:bg-legendary"
+          />
         </div>
         <div className=" flex flex-wrap items-center justify-center md:gap-4 md:mt-8 mt-20 md:w-full w-8/12 mx-auto">
           <div>

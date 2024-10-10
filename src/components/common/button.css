@@ -1,0 +1,53 @@
+.btn-77,
+.btn-77 *,
+.btn-77 :after,
+.btn-77 :before,
+.btn-77:after,
+.btn-77:before {
+  border: none;
+  /* box-sizing: border-box; */
+}
+.btn-77 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-image: none;
+  cursor: pointer;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #9dc1e4);
+  padding: 0;
+}
+.btn-77:disabled {
+  cursor: default;
+}
+.btn-77:-moz-focusring {
+  outline: auto;
+}
+.btn-77 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-77 [hidden] {
+  display: none;
+}
+.btn-77 {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 2em transparent;
+  box-sizing: border-box;
+  display: block;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 0.8rem 2rem;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #9dc1e4;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #9dc1e4;
+  }
+}
