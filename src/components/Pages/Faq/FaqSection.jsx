@@ -12,11 +12,11 @@ const FaqSection = () => {
       />
       <div className="min-h-screen flex items-center justify-center mt-4">
         <ResponsiveContainer>
-          <div className=" md:w-10/12 mx-auto">
+          <div>
             {primeWaveFaq?.map((faq) => (
               <div
                 key={faq.id}
-                className="collapse collapse-plus mt-6 border border-secondary rounded-none"
+                className="collapse collapse-plus mt-6 border border-secondary bg-[#10345c14]"
               >
                 <input type="radio" name="my-accordion-3" />
                 <div className="collapse-title text-xl font-semibold text-secondary">

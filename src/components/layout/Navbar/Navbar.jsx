@@ -9,6 +9,7 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +23,11 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-0">
         {/* Logo */}
         <div className="text-4xl font-extrabold">
-          <span className="text-legendary font-black font-montserrat">
-            PrimeWave
-          </span>
+          <Link href="/">
+            <span className="text-legendary font-black font-montserrat">
+              PrimeWave
+            </span>
+          </Link>
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -58,7 +61,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="#about"
+            href="/about"
             className="py-2 text-3xl font-bold hover:text-[#104F89]"
           >
             About
