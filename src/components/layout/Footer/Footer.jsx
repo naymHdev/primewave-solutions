@@ -125,8 +125,8 @@ const Footer = () => {
           </footer>
 
           {/* Bottom Footer Section */}
-          <footer className="border border-[#1D1D1D] py-6 px-1 grid grid-cols-1 md:grid-cols-3 items-center space-y-5 md:space-y-0">
-            <div className="text-white font-medium md:font-semibold flex space-x-4 items-center">
+          <footer className="border border-[#1D1D1D] py-3 md:py-6 px-1 grid grid-cols-1 md:grid-cols-3 items-center space-y-3 md:space-y-0">
+            <div className="text-white font-medium md:font-semibold hidden md:flex space-x-4 items-center">
               <Link href="#" className="hover:text-legendary">
                 Privacy Policy
               </Link>
@@ -135,7 +135,7 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className=" flex items-center justify-start md:justify-center relative">
+            <div className=" hidden md:flex items-center justify-start md:justify-center relative">
               <div className=" rounded-full p-1 bg-white text-black absolute -left-3 md:left-[68px]">
                 <BsShieldLockFill />
               </div>
@@ -146,7 +146,7 @@ const Footer = () => {
                 PROTECTED
               </div>
             </div>
-            <div className=" flex items-center justify-start md:justify-end gap-2 text-white text-lg font-medium md:font-semibold">
+            <div className=" flex items-center justify-center md:justify-end gap-2 text-white text-sm md:text-lg font-medium md:font-semibold">
               <h3>PrimeWave</h3>
               <h2>
                 <FaRegCopyright />

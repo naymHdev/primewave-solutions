@@ -16,13 +16,13 @@ const Banner = () => {
           quality={100}
         />
       </div>
-      <div className="absolute top-1/4">
-        <div className=" text-center w-9/12 mx-auto">
-          <h1 className="text-4xl text-black font-black">
+      <div className="absolute md:top-1/4 top-[110px]">
+        <div className=" text-center px-1 md:w-9/12 mx-auto">
+          <h1 className="text-2xl md:text-4xl text-black font-bold">
             Building <span className="text-primary">Digital Foundations</span>{" "}
             for Remodeling
           </h1>
-          <p className=" text-black text-center mt-8 font-medium text-xl">
+          <p className=" text-black text-center mt-8 font-medium md:text-xl">
             We specialize in creating modern, visually engaging, and
             conversion-focused websites tailored to the unique needs of
             <span className="font-extrabold text-secondary px-1">
@@ -40,40 +40,46 @@ const Banner = () => {
             and fuel long-term business growth.
           </p>
         </div>
-        <div className="flex items-center justify-center gap-10 mt-8">
-          <button className="text-white bg-secondary px-8 py-3 font-medium text-xl">
+        <div className="flex items-center justify-center gap-1 md:gap-6 mt-8">
+          <button className="text-white bg-secondary px-6 py-3 font-medium text-xl">
             SERVICES
           </button>
           <button className="text-white bg-primary px-8 py-3 font-medium text-xl">
             BOOK A CALL
           </button>
         </div>
-        <div className="flex items-center justify-center gap-4 mt-8">
-          <h2 className="text-black font-bold">
-            Top Rated Agency {currentYear}
-          </h2>
-          <Image
-            src="/icons/google-text.png"
-            alt="Google Text Logo"
-            width={90}
-            height={90}
-            priority={true}
-            quality={100}
-          />
-          <Image
-            src="/icons/rating.png"
-            alt="Google Rating in PrimeWave Solutions"
-            width={70}
-            height={70}
-            priority={true}
-            quality={100}
-          />
-          <h2 className="text-black font-bold">5.0</h2>
-          <p className="text-sm text-black">verified by Trustindex</p>
+        <div className=" flex flex-wrap items-center justify-center md:gap-4 md:mt-8 mt-20 md:w-full w-8/12 mx-auto">
+          <div>
+            <h2 className="text-black font-bold">
+              Top Rated Agency {currentYear}
+            </h2>
+          </div>
+          <div className=" flex items-center gap-2">
+            <Image
+              src="/icons/google-text.png"
+              alt="Google Text Logo"
+              width={90}
+              height={90}
+              priority={true}
+              quality={100}
+            />
+            <Image
+              src="/icons/rating.png"
+              alt="Google Rating in PrimeWave Solutions"
+              width={70}
+              height={70}
+              priority={true}
+              quality={100}
+            />
+            <h2 className="text-black font-bold">5.0</h2>
+          </div>
+          <div>
+            <p className="text-sm text-black">verified by Trustindex</p>
+          </div>
         </div>
       </div>
 
-      <section className="bg-secondary flex items-center justify-center gap-16 py-6">
+      <section className="bg-secondary md:mt-0 mt-60 grid md:flex items-center justify-center gap-16 py-10 md:py-6">
         <div className="flex items-center flex-col text-center">
           <Image
             src="/icons/growth.png"
