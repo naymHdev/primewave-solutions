@@ -1,154 +1,133 @@
 "use client";
-import Image from "next/image";
-import logo from "../../../../public/images/PrimeWave-logo.png";
+import ResponsiveContainer from "@/components/common/ResponsiveContainer";
+import Link from "next/link";
+import React from "react";
+import { BsShieldLockFill } from "react-icons/bs";
 import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
-import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <>
-      <footer className="relative mt-14">
-        <section className="container mx-auto px-4 md:px-0 py-8">
-          <div>
-            <Image
-              className=""
-              src={logo}
-              alt="PrimeWave Solutions Logo"
-              width={170}
-              height={170}
-              priority={true}
-              quality={100}
-            />
-            <h1 className="text-5xl font-extrabold text-secondary -mt-4">
-              PrimeWave
-            </h1>
-            <p className="text-gray-700 mt-1 w-1/2">
-              Helping Remodeling Contractors Grow with Modern High-Impact
-              Websites Tailored to Their Unique Needs.
-            </p>
-          </div>
-          <nav className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20">
-            <div>
-              <h2 className="text-xl font-bold text-secondary">MAIN</h2>
-              <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li className="hover:text-primary">
-                  <a href="">Home</a>
-                </li>
-                <li className="hover:text-primary">
-                  <a href="">About</a>
-                </li>
-                <li className="hover:text-primary">
-                  <a href="">Services</a>
-                </li>
-                <li className="hover:text-primary">
-                  <a href="">Portfolio</a>
-                </li>
-                <li className="hover:text-primary">
-                  <a href="">Contact Us</a>
-                </li>
-              </ul>
+      <div className=" bg-[#121212] py-20 mt-">
+        <ResponsiveContainer>
+          <footer className=" grid grid-cols-1 md:grid-cols-7">
+            <div className=" col-span-full md:col-span-5">
+              <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h2 className=" text-3xl font-black text-legendary">
+                    PrimeWave
+                  </h2>
+                  <p className=" text-gray-400 font-medium mt-6">
+                    We craft captivating websites that boost your brand's
+                    digital footprint. Our team's expertise spans design,
+                    development, and marketing. We deliver sites that shine
+                    across all devices, from responsive layouts to
+                    search-optimised content.
+                  </p>
+
+                  {/* Social media icons */}
+                  <div className="flex items-center space-x-6 py-8">
+                    <a
+                      className="hover:-mt-10 transition-all duration-300"
+                      href="https://web.facebook.com/naymHdev"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaFacebook className="text-xl text-legendary" />
+                    </a>
+                    <a
+                      className="hover:-mt-10 transition-all duration-300"
+                      href="https://www.linkedin.com/in/naymhdev"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaInstagram className="text-xl text-legendary" />
+                    </a>
+                    <a
+                      className="hover:-mt-10 transition-all duration-300"
+                      href="https://www.linkedin.com/in/naymhdev"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLinkedin className="text-xl text-legendary" />
+                    </a>
+                    <a
+                      className="hover:-mt-10 transition-all duration-300"
+                      href="https://wa.me/8801770064053"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaWhatsapp className="text-xl text-legendary" />
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <h2 className=" text-xl font-black text-white">Contact Us</h2>
+                  <div className=" mt-6 text-gray-400 font-medium">
+                    <h3>
+                      Based in the USA, offering global services and working
+                      remotely. Reach out to us!
+                    </h3>
+                    <div className=" mt-10 space-y-2">
+                      <p>
+                        <a
+                          href="https://wa.me/88001770064053"
+                          className=" hover:text-legendary hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          +880 01770064053
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="mailto:hello.primewave@gmail.com"
+                          className=" hover:text-legendary hover:underline"
+                        >
+                          hello.primewave@gmail.com
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h2 className="text-xl font-bold text-secondary">SERVICES</h2>
-              <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li className="hover:text-primary">Content</li>
-                <li className="hover:text-primary">Design</li>
-                <li className="hover:text-primary">Marketing</li>
-                <li className="hover:text-primary">Strategy</li>
-                <li className="hover:text-primary">Development</li>
-              </ul>
+            <div className="bg-[#1D1D1D] col-span-full md:col-span-2"></div>
+          </footer>
+
+          {/* Bottom Footer Section */}
+          <footer className="border border-[#1D1D1D] py-6 px-1 grid grid-cols-1 md:grid-cols-2 items-center">
+            <div className=" flex items-center gap-2 text-white text-lg font-semibold">
+              <h3 className="">
+                PrimeWave <span>{currentYear}</span>
+              </h3>
+              <div>/</div>
+              <Link href="#" className=" underline hover:text-legendary">
+                Privacy Policy
+              </Link>
             </div>
-            <div>
-              <h2 className="text-xl font-bold text-secondary">INDUSTRIES</h2>
-              <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li className="hover:text-primary">Home Remodeling</li>
-                <li className="hover:text-primary">Kitchen Remodeling</li>
-                <li className="hover:text-primary">Bathroom Renovation</li>
-                <li className="hover:text-primary">Flooring Installation</li>
-                <li className="hover:text-primary">Home Painting</li>
-                <li className="hover:text-primary">Landscaping Design</li>
-                <li className="hover:text-primary">
-                  Energy-efficient Home Improvements
-                </li>
-                <li className="hover:text-primary">
-                  Accessibility Modifications
-                </li>
-              </ul>
+            <div className=" flex items-center relative">
+              <div className=" rounded-full p-1 bg-white text-black absolute -left-3">
+                <BsShieldLockFill />
+              </div>
+              <div className="bg-[#A3A3A3] text-white pl-3 px-1 font-semibold">
+                DMC
+              </div>
+              <div className=" bg-[#272727] text-white px-2 font-semibold">
+                PROTECTED
+              </div>
             </div>
-            <div>
-              <h2 className="text-xl font-bold text-secondary">CONTACT</h2>
-              <ul className="space-y-2 mt-4 font-semibold text-gray-800">
-                <li className="hover:text-primary">
-                  hello.primewave@gmail.com
-                </li>
-                <li className="hover:text-primary">+880 01770064053</li>
-                <li className="font-extrabold text-secondary">Always Open</li>
-              </ul>
-            </div>
-          </nav>
-        </section>
-      </footer>
-      <div className="container mx-auto px-4 md:px-0 flex items-center justify-between my-24 font-medium text-black">
-        <h3>© 2023 - {currentYear} Crafted. All Rights Reserved.</h3>
-        <p>Designed & Developed in PrimeWave.</p>
+            <div></div>
+          </footer>
+        </ResponsiveContainer>
       </div>
-      <footer className="bg-secondary py-2 px-4 md:px-0">
-        <section className="grid md:flex items-center justify-between container mx-auto">
-          <div className="grid md:flex items-center md:space-x-3 space-y-2 md:space-y-0 font-medium">
-            <Link href="#" className="text-[#66A6EC] hover:text-primary">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-[#66A6EC] hover:text-primary">
-              Refund Policy
-            </Link>
-            <Link href="#" className="text-[#66A6EC] hover:text-primary">
-              Terms Of Service
-            </Link>
-          </div>
-          {/* Social media links with icons */}
-          <div className="flex items-center justify-end space-x-5 mt-4 md:mt-0">
-            <a
-              className="hover:-mt-10 transition-all duration-300 rounded-full p-2 bg-[#1267b6]"
-              href="https://web.facebook.com/naymHdev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook className="text-xl text-white" />
-            </a>
-            <a
-              className="hover:-mt-10 transition-all duration-300 rounded-full p-2 bg-[#1267b6]"
-              href="https://www.linkedin.com/in/naymhdev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="text-xl text-white" />
-            </a>
-            <a
-              className="hover:-mt-10 transition-all duration-300 rounded-full p-2 bg-[#1267b6]"
-              href="https://www.linkedin.com/in/naymhdev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="text-xl text-white" />
-            </a>
-            <a
-              className="hover:-mt-10 transition-all duration-300 rounded-full p-2 bg-[#1267b6]"
-              href="https://wa.me/8801770064053"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp className="text-xl text-white" />
-            </a>
-          </div>
-        </section>
-      </footer>
     </>
   );
 };
