@@ -1,0 +1,64 @@
+.wave-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  background-color: #10345c;
+}
+
+.wave-button:hover .wave {
+  top: -120px;
+}
+
+.wave-button span {
+  position: relative;
+  z-index: 1;
+  line-height: 150px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wave-button .wave {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -20px;
+  transition: 0.4s;
+}
+
+.wave-button .wave::before,
+.wave-button .wave::after {
+  width: 200%;
+  height: 200%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.wave-button .wave::before {
+  border-radius: 45%;
+  background-color: rgba(20, 20, 20, 1);
+  animation: wave 5s linear infinite;
+}
+
+.wave-button .wave::after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
