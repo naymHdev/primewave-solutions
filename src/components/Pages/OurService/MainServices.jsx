@@ -15,7 +15,7 @@ const MainServices = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <div className="flex flex-col items-center justify-center">
+            <div>
               <Image
                 src={service.image}
                 alt={service.description}

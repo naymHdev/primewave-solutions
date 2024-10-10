@@ -5,7 +5,7 @@ const FeaturedWorksCard = ({ portfolio }) => {
   const { projectTitle, companyName, image } = portfolio || {};
 
   return (
-    <div className="relative overflow-hidden  cursor-pointer group">
+    <div className="relative overflow-hidden  cursor-pointer group rounded-lg">
       {/* Image Container with Zoom Effect */}
       <motion.div
         whileHover={{ scale: 1.1 }}
