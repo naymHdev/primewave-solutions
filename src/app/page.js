@@ -1,7 +1,6 @@
 import Banner from "@/components/banner/Banner";
 import MarqueeComponent from "@/components/MarqueeComponent";
 import ContactUs from "@/components/Pages/ContactUs/ContactUs";
-import HowGoing from "@/components/Pages/HowGoing/HowGoing";
 import OurService from "@/components/Pages/OurService/OurService";
 import FeaturedWork from "@/components/Pages/Portfolio/FeaturedWork";
 import ReviewSection from "@/components/Pages/Reviews/Reviews";
@@ -14,7 +13,6 @@ export default function Home() {
       <FeaturedWork />
       <OurService />
       <ReviewSection />
-      <HowGoing />
       <Solutions />
       <ContactUs />
       <MarqueeComponent />

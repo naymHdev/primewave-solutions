@@ -1,5 +1,4 @@
 import Image from "next/image";
-import banner from "../../../public/images/pixelcut-export.jpeg";
 import Button from "../common/Button";
 
 const Banner = () => {
@@ -7,117 +6,115 @@ const Banner = () => {
 
   return (
     <>
-      <div className="relative w-full min-h-screen">
-        <Image
-          src={banner}
-          alt="Banner Image"
-          layout="fill"
-          objectFit="cover"
-          priority={true}
-          quality={100}
-        />
-      </div>
-      <div className="absolute md:top-1/4 top-[110px]">
-        <div className=" text-center px-1 md:w-9/12 mx-auto">
-          <h1 className="text-2xl md:text-4xl text-black font-bold">
-            Building <span className="text-primary">Digital Foundations</span>{" "}
-            for Remodeling
-          </h1>
-          <p className=" text-black text-center mt-8 font-medium md:text-xl">
-            We specialize in creating modern, visually engaging, and
-            conversion-focused websites tailored to the unique needs of
-            <span className="font-extrabold text-secondary px-1">
-              remodeling contractors.
-            </span>
-            From showcasing your{" "}
-            <span className="font-extrabold text-secondary px-1">
-              portfolio and client testimonials to optimizing your site
-            </span>{" "}
-            for local search rankings, our{" "}
-            <span className="font-extrabold text-secondary px-1">
-              custom solutions
-            </span>{" "}
-            are designed to elevate your online presence, attract more clients,
-            and fuel long-term business growth.
-          </p>
-        </div>
-        <div className="flex items-center justify-center mt-8">
-          <Button
-            label="BOOK A CALL"
-            bg="bg-primary"
-            hover="hover:bg-legendary"
+      <div className="relative">
+        <video
+          className="w-full h-auto"
+          preload="metadata"
+          autoPlay
+          muted
+          loop
+          loading="lazy"
+        >
+          <source src="/videos/banner-bg.mp4" type="video/mp4" />
+          <source src="/videos/banner-bg.webm" type="video/webm" />
+          <track
+            src="/path/to/captions.vtt"
+            kind="subtitles"
+            srcLang="en"
+            label="English"
           />
-        </div>
-        <div className=" flex flex-wrap items-center justify-center md:gap-4 md:mt-8 mt-20 md:w-full w-8/12 mx-auto">
-          <div>
-            <h2 className="text-black font-bold">
+        </video>
+        <section className="absolute md:top-0 -top-[200px] w-full h-full flex flex-col justify-center items-center">
+          <div className="text-center">
+            <h1 className="text-xl md:text-5xl text-white font-black">
+              Elevate Your <span className=" text-legendary">Remodeling</span>{" "}
+              Business
+            </h1>
+            <p className="text-white md:mt-4 text-sm md:text-lg md:w-1/2 w-11/12 mx-auto">
+              We build modern, conversion-focused websites for{" "}
+              <span className="font-extrabold text-secondary">
+                remodeling contractors
+              </span>
+              . Showcase your portfolio, attract more clients, and grow your
+              business.
+            </p>
+            <div className="mt-6 flex items-center justify-center">
+              <Button
+                label="BOOK A CALL"
+                bg="bg-primary"
+                hover="hover:bg-legendary"
+              />
+            </div>
+          </div>
+          <div className=" hidden md:flex flex-col md:flex-row justify-center items-center gap-2 mt-6  w-10/12 mx-auto text-black md:text-white">
+            <h2 className=" font-bold text-sm">
               Top Rated Agency {currentYear}
             </h2>
+            <div className="flex items-center gap-2">
+              <Image
+                src="/icons/google-text.png"
+                alt="Google Text Logo"
+                width={70}
+                height={70}
+                priority={true}
+                quality={100}
+              />
+              <Image
+                src="/icons/rating.png"
+                alt="Google Rating in PrimeWave Solutions"
+                width={60}
+                height={60}
+                priority={true}
+                quality={100}
+              />
+              <h2 className=" font-bold text-sm">5.0</h2>
+            </div>
+            <div>
+              <p className="text-sm ">verified by Trustindex</p>
+            </div>
           </div>
-          <div className=" flex items-center gap-2">
+        </section>
+
+        <section className="bg-secondary mt-[90px] md:mt-0 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="flex flex-col items-center">
             <Image
-              src="/icons/google-text.png"
-              alt="Google Text Logo"
-              width={90}
-              height={90}
-              priority={true}
-              quality={100}
-            />
-            <Image
-              src="/icons/rating.png"
-              alt="Google Rating in PrimeWave Solutions"
+              src="/icons/growth.png"
+              alt="Growth Icon"
               width={70}
               height={70}
               priority={true}
               quality={100}
             />
-            <h2 className="text-black font-bold">5.0</h2>
+            <p className="text-lg font-bold mt-2 text-white">More Traffic</p>
           </div>
-          <div>
-            <p className="text-sm text-black">verified by Trustindex</p>
+          <div className="flex flex-col items-center">
+            <Image
+              src="/icons/trustworthiness.png"
+              alt="Trustworthiness Icon"
+              width={70}
+              height={70}
+              priority={true}
+              quality={100}
+            />
+            <p className="text-lg font-bold mt-2 text-white">
+              Better Lead Quality
+            </p>
           </div>
-        </div>
+          <div className="flex flex-col items-center">
+            <Image
+              src="/icons/selling.png"
+              alt="Selling Icon"
+              width={70}
+              height={70}
+              priority={true}
+              quality={100}
+            />
+            <p className="text-lg font-bold mt-2 text-white">
+              Sell More Remodeling
+            </p>
+          </div>
+        </section>
       </div>
-
-      <section className="bg-secondary md:mt-0 mt-60 grid md:flex items-center justify-center gap-16 py-10 md:py-6">
-        <div className="flex items-center flex-col text-center">
-          <Image
-            src="/icons/growth.png"
-            alt="Google Text Logo"
-            width={80}
-            height={80}
-            priority={true}
-            quality={100}
-          />
-          <p className="text-xl font-bold mt-1 text-white">More Traffic</p>
-        </div>
-        <div className="flex items-center flex-col text-center">
-          <Image
-            src="/icons/trustworthiness.png"
-            alt="Google Text Logo"
-            width={80}
-            height={80}
-            priority={true}
-            quality={100}
-          />
-          <p className="text-xl font-bold mt-1 text-white">
-            Better Lead Quality
-          </p>
-        </div>
-        <div className="flex items-center flex-col text-center">
-          <Image
-            src="/icons/selling.png"
-            alt="Google Text Logo"
-            width={80}
-            height={80}
-            priority={true}
-            quality={100}
-          />
-          <p className="text-xl font-bold mt-1 text-white">
-            Sell More Remodeling
-          </p>
-        </div>
-      </section>
     </>
   );
 };
