@@ -1,5 +1,8 @@
 import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 import SectionName from "@/components/common/SectionName";
+import FaqSection from "@/components/Pages/Faq/FaqSection";
+import ReviewSection from "@/components/Pages/Reviews/Reviews";
+import WhyChoose from "@/components/Pages/WhyChoose/WhyChoose";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa";
 
@@ -79,6 +82,9 @@ const AboutPage = () => {
           </section>
         </div>
       </ResponsiveContainer>
+      <ReviewSection />
+      <WhyChoose />
+      <FaqSection />
     </>
   );
 };
