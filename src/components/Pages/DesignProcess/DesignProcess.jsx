@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 import { designSteps } from "@/data/designProcess";
 import Image from "next/image";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+import SectionName from "@/components/common/SectionName";
 
 const DesignProcess = () => {
   const sectionRef = useRef(null);
@@ -42,11 +44,16 @@ const DesignProcess = () => {
 
   return (
     <>
-      <div className=" py-10">
+      <SectionName
+        name="Home Remodeling Website Design Process"
+        title="Explore Our Home Remodeling Website Design Process"
+        details="Discover how we craft custom websites tailored for home remodeling contractors, delivering impactful results."
+      />
+      <div className=" bg-gradient-to-r from-secondary via-primary to-legendary">
         <ResponsiveContainer>
           <section className="overflow-hidden">
             <div ref={triggerRef}>
-              <div ref={sectionRef} className="scroll-section-inner">
+              <div ref={sectionRef} className="scroll-section-inner gap-10">
                 {designSteps?.map((process) => (
                   <div key={process.id} className="scroll-section">
                     <section>
@@ -54,19 +61,24 @@ const DesignProcess = () => {
                         <Image
                           src={process.image}
                           alt={process.title}
-                          width={70}
-                          height={70}
+                          width={100}
+                          height={100}
                           priority={true}
                           quality={100}
                         />
                       </div>
-                      <div className=" text-black">
-                        <h2>{process.title}</h2>
-                        <p>{process.description}</p>
-                        <div>
+                      <div className="mt-10">
+                        <h2 className=" text-4xl font-black text-legendary">
+                          {process.title}
+                        </h2>
+                        <p className=" text-white font-medium mt-3 text-lg">
+                          {process.description}
+                        </p>
+                        <div className=" mt-8 font-medium text-white">
                           {process.details.map((step, index) => (
                             <div key={index}>
-                              <ul>
+                              <ul className="flex items-center gap-3 mt-3 text-lg">
+                                <MdOutlineArrowForwardIos className=" text-legendary text-3xl" />
                                 <li>{step}</li>
                               </ul>
                             </div>
