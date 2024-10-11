@@ -9,11 +9,13 @@ import { FaCheck } from "react-icons/fa";
 const AboutPage = () => {
   return (
     <>
-      <SectionName
-        name="Our Mission"
-        title="Empowering Remodeling Contractors to Grow Digitally"
-        details="Our mission is to build the digital foundations that drive success for your remodeling business. From websites that convert to strategies that grow, we're here to help you achieve sustainable success."
-      />
+      <div className=" mt-16 md:mt-0">
+        <SectionName
+          name="Our Mission"
+          title="Empowering Remodeling Contractors to Grow Digitally"
+          details="Our mission is to build the digital foundations that drive success for your remodeling business. From websites that convert to strategies that grow, we're here to help you achieve sustainable success."
+        />
+      </div>
       <div>
         <Image
           className=" w-full h-auto"
@@ -28,26 +30,26 @@ const AboutPage = () => {
         <div className="flex flex-col md:flex-row items-center justify-between mt-16 space-y-8 md:space-y-0">
           {/* Left Section */}
           <section className="flex-1 md:pr-8">
-            <h3 className="text-secondary text-2xl md:text-3xl font-black leading-tight md:leading-snug">
+            <h3 className="text-secondary text-2xl md:text-3xl font-bold md:font-black leading-tight md:leading-snug">
               Crafting Digital Foundations for Remodeling Success
             </h3>
 
             <div className="mt-10 space-y-6">
-              <div className="font-bold text-lg flex items-center gap-3">
+              <div className="font-semibold md:font-bold md:text-lg flex items-center gap-3">
                 <FaCheck className="text-legendary text-xl" />
                 <h4>
                   Custom Web Design Solutions
                   <span className="text-legendary"> To Drive Conversions</span>
                 </h4>
               </div>
-              <div className="font-bold text-lg flex items-center gap-3">
+              <div className="font-semibold md:font-bold md:text-lg flex items-center gap-3">
                 <FaCheck className="text-legendary text-xl" />
                 <h4>
                   Effective Marketing Campaigns
                   <span className="text-legendary"> To Generate Growth</span>
                 </h4>
               </div>
-              <div className="font-bold text-lg flex items-center gap-3">
+              <div className="font-semibold md:font-bold md:text-lg flex items-center gap-3">
                 <FaCheck className="text-legendary text-xl" />
                 <h4>
                   Tailored Branding Strategies

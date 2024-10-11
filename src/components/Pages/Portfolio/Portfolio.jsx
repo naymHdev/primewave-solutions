@@ -1,11 +1,12 @@
 "use client";
 import { works } from "@/data/featuredWorks";
 import FeaturedWorksCard from "./FeaturedWorksCard";
+import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 
 const Portfolio = () => {
   return (
     <>
-      <div className="container mx-auto px-4 md:px-0">
+      <ResponsiveContainer>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {works.map((portfolio, index) => (
             <div className="relative w-full h-[450px]" key={index}>
@@ -13,7 +14,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-      </div>
+      </ResponsiveContainer>
     </>
   );
 };

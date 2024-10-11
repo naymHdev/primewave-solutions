@@ -3,6 +3,7 @@ import { solutionData } from "@/data/solutions";
 import { RiMessage3Line } from "react-icons/ri";
 import { MdVerified } from "react-icons/md";
 import Image from "next/image";
+import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 
 const Solutions = () => {
   return (
@@ -12,7 +13,7 @@ const Solutions = () => {
         title="Remodeler's Frustrations Into Solutions"
         details="Through innovative strategies and practical solutions, these frustrations can be effectively managed."
       />
-      <div className="container mx-auto px-4 md:px-0 mt-4">
+      <ResponsiveContainer>
         <div>
           {solutionData?.map((solution) => (
             <div
@@ -67,7 +68,7 @@ const Solutions = () => {
             </div>
           ))}
         </div>
-      </div>
+      </ResponsiveContainer>
     </>
   );
 };
