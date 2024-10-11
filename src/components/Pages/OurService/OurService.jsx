@@ -1,5 +1,6 @@
 import SectionName from "@/components/common/SectionName";
 import MainServices from "./MainServices";
+import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 
 const OurService = () => {
   return (
@@ -9,9 +10,9 @@ const OurService = () => {
         title="Building Digital Experiences as Stunning as Your Remodels"
         details="Empower Your Business: Create a Lasting Impression with Tailored Designs That Showcase Your Expertise and Attract Your Ideal Clients"
       />
-      <div className="container mx-auto px-4 md:px-0">
+      <ResponsiveContainer>
         <MainServices />
-      </div>
+      </ResponsiveContainer>
     </>
   );
 };
