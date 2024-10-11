@@ -59,7 +59,7 @@ const Navbar = () => {
           {/* Hamburger Menu Icon */}
           <div className="">
             <button onClick={handleMenuToggle}>
-              <RiMenu4Line className="size-10 font-black text-[#10355D]" />
+              <RiMenu4Line className="size-10 font-black text-legendary" />
             </button>
           </div>
         </div>

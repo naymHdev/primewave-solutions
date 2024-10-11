@@ -7,32 +7,85 @@ const Banner = () => {
   return (
     <>
       <div className="relative">
-        <video
-          className="w-full h-auto"
-          preload="metadata"
-          autoPlay
-          muted
-          loop
-          loading="lazy"
-        >
-          <source src="/videos/banner-bg.mp4" type="video/mp4" />
-          <source src="/videos/banner-bg.webm" type="video/webm" />
-          <track
-            src="/path/to/captions.vtt"
-            kind="subtitles"
-            srcLang="en"
-            label="English"
-          />
-        </video>
-        <section className="absolute md:top-0 -top-[200px] w-full h-full flex flex-col justify-center items-center">
+        <div className=" flex items-center overflow-hidden">
+          <video
+            className="w-full h-screen"
+            preload="metadata"
+            autoPlay
+            muted
+            loop
+            loading="lazy"
+          >
+            <source src="/videos/bannerbg.mp4" type="video/mp4" />
+            <source src="/videos/bannerbg.webm" type="video/webm" />
+            <track
+              src="/path/to/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+          </video>
+          <video
+            className="w-full h-screen"
+            preload="metadata"
+            autoPlay
+            muted
+            loop
+            loading="lazy"
+          >
+            <source src="/videos/bannerbg.mp4" type="video/mp4" />
+            <source src="/videos/bannerbg.webm" type="video/webm" />
+            <track
+              src="/path/to/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+          </video>
+          <video
+            className="w-full h-screen"
+            preload="metadata"
+            autoPlay
+            muted
+            loop
+            loading="lazy"
+          >
+            <source src="/videos/bannerbg.mp4" type="video/mp4" />
+            <source src="/videos/bannerbg.webm" type="video/webm" />
+            <track
+              src="/path/to/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+          </video>
+          <video
+            className="w-full h-screen"
+            preload="metadata"
+            autoPlay
+            muted
+            loop
+            loading="lazy"
+          >
+            <source src="/videos/bannerbg.mp4" type="video/mp4" />
+            <source src="/videos/bannerbg.webm" type="video/webm" />
+            <track
+              src="/path/to/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+          </video>
+        </div>
+        <section className="absolute md:top-0 -top-[210px] w-full h-full flex flex-col justify-center items-center">
           <div className="text-center">
-            <h1 className="text-xl md:text-5xl text-white font-black">
+            <h1 className="text-3xl md:text-5xl text-white font-black">
               Elevate Your <span className=" text-legendary">Remodeling</span>{" "}
               Business
             </h1>
-            <p className="text-white md:mt-4 text-sm md:text-lg md:w-1/2 w-11/12 mx-auto">
+            <p className="text-white mt-4 text-lg md:w-1/2 w-11/12 mx-auto">
               We build modern, conversion-focused websites for{" "}
-              <span className="font-extrabold text-secondary">
+              <span className="font-extrabold text-legendary">
                 remodeling contractors
               </span>
               . Showcase your portfolio, attract more clients, and grow your
