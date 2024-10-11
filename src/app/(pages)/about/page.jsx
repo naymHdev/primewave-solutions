@@ -9,13 +9,6 @@ import { FaCheck } from "react-icons/fa";
 const AboutPage = () => {
   return (
     <>
-      <div className=" mt-16 md:mt-0">
-        <SectionName
-          name="Our Mission"
-          title="Empowering Remodeling Contractors to Grow Digitally"
-          details="Our mission is to build the digital foundations that drive success for your remodeling business. From websites that convert to strategies that grow, we're here to help you achieve sustainable success."
-        />
-      </div>
       <div>
         <Image
           className=" w-full h-auto"
@@ -24,6 +17,13 @@ const AboutPage = () => {
           width={500}
           height={300}
           priority={true}
+        />
+      </div>
+      <div className="">
+        <SectionName
+          name="Our Mission"
+          title="Empowering Remodeling Contractors to Grow Digitally"
+          details="Our mission is to build the digital foundations that drive success for your remodeling business. From websites that convert to strategies that grow, we're here to help you achieve sustainable success."
         />
       </div>
       <ResponsiveContainer>

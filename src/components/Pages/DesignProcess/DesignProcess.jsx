@@ -74,12 +74,17 @@ const DesignProcess = () => {
                         <p className=" text-white font-medium mt-3 text-lg">
                           {process.description}
                         </p>
-                        <div className=" mt-8 font-medium text-white">
+                        <p className="text-white font-semibold text-xl mt-6">
+                          Here’s how our team does it:
+                        </p>
+                        <div className=" mt-6 font-medium text-white">
                           {process.details.map((step, index) => (
                             <div key={index}>
-                              <ul className="flex items-center gap-3 mt-3 text-lg">
-                                <MdOutlineArrowForwardIos className=" text-legendary text-3xl" />
-                                <li>{step}</li>
+                              <ul className="flex items-center gap-3 mt-3">
+                                <MdOutlineArrowForwardIos className=" text-legendary text-2xl" />
+                                <li className=" text-lg font-semibold text-white">
+                                  {step}
+                                </li>
                               </ul>
                             </div>
                           ))}

@@ -7,7 +7,7 @@ const Button = ({ label, bg, hover, type }) => {
     <>
       <button
         type={type}
-        className={`btn-77 font-medium text-xl ${bg} ${hover} text-white`}
+        className={`btn-77 font-semibold text-xl ${bg} ${hover} text-white`}
       >
         {label}
       </button>

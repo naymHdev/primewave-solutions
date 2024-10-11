@@ -2,6 +2,7 @@ import Banner from "@/components/banner/Banner";
 import MarqueeComponent from "@/components/MarqueeComponent";
 import ContactUs from "@/components/Pages/ContactUs/ContactUs";
 import DesignProcess from "@/components/Pages/DesignProcess/DesignProcess";
+import FaqSection from "@/components/Pages/Faq/FaqSection";
 import OurService from "@/components/Pages/OurService/OurService";
 import FeaturedWork from "@/components/Pages/Portfolio/FeaturedWork";
 import ReviewSection from "@/components/Pages/Reviews/Reviews";
@@ -11,13 +12,14 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      <DesignProcess />
       <FeaturedWork />
       <OurService />
       <ReviewSection />
+      <DesignProcess />
       <Solutions />
       <ContactUs />
       <MarqueeComponent />
+      <FaqSection />
     </main>
   );
 }
