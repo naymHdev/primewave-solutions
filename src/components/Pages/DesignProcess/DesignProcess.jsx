@@ -3,6 +3,9 @@ import "./designProcess.css";
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import ResponsiveContainer from "@/components/common/ResponsiveContainer";
+import { designSteps } from "@/data/designProcess";
+import Image from "next/image";
 
 const DesignProcess = () => {
   const sectionRef = useRef(null);
@@ -39,25 +42,44 @@ const DesignProcess = () => {
 
   return (
     <>
-      <div className=" py-20">
-        <section className="overflow-hidden">
-          <div ref={triggerRef}>
-            <div ref={sectionRef} className="scroll-section-inner">
-              <div className="scroll-section">
-                <h3>Section 1</h3>
-              </div>
-              <div className="scroll-section">
-                <h3>Section 2</h3>
-              </div>
-              <div className="scroll-section">
-                <h3>Section 3</h3>
-              </div>
-              <div className="scroll-section">
-                <h3>Section 4</h3>
+      <div className=" py-10">
+        <ResponsiveContainer>
+          <section className="overflow-hidden">
+            <div ref={triggerRef}>
+              <div ref={sectionRef} className="scroll-section-inner">
+                {designSteps?.map((process) => (
+                  <div key={process.id} className="scroll-section">
+                    <section>
+                      <div>
+                        <Image
+                          src={process.image}
+                          alt={process.title}
+                          width={70}
+                          height={70}
+                          priority={true}
+                          quality={100}
+                        />
+                      </div>
+                      <div className=" text-black">
+                        <h2>{process.title}</h2>
+                        <p>{process.description}</p>
+                        <div>
+                          {process.details.map((step, index) => (
+                            <div key={index}>
+                              <ul>
+                                <li>{step}</li>
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </ResponsiveContainer>
       </div>
     </>
   );
