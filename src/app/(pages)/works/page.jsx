@@ -23,8 +23,8 @@ const Portfolios = () => {
       </div>
       <Portfolio />
       <DesignProcess />
-      <TechToolsUsed />
       <Gallery />
+      <TechToolsUsed />
       <ContactUs /> /
     </>
   );

@@ -1,31 +1,31 @@
 export const imageGallery = [
   {
     id: 1,
-    image: "/images/work-baner1.png",
+    image: "/images/gallary1.png",
     title: "",
     subTitle: "",
   },
   {
     id: 2,
-    image: "/images/work-banner2.png",
+    image: "/images/gallery2.png",
     title: "",
     subTitle: "",
   },
   {
     id: 3,
-    image: "/images/work-banner3.png",
+    image: "/images/gallery3.png",
     title: "",
     subTitle: "",
   },
   {
     id: 4,
-    image: "/images/work-banner4.png",
+    image: "/images/gallery4.png",
     title: "",
     subTitle: "",
   },
   {
     id: 5,
-    image: "/images/work-banner5.png",
+    image: "/images/gallery5.png",
     title: "",
     subTitle: "",
   },
