@@ -2,6 +2,7 @@ import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 import RouteBanner from "@/components/common/RouteBanner";
 import SectionName from "@/components/common/SectionName";
 import MarqueeComponent from "@/components/MarqueeComponent";
+import ContactUs from "@/components/Pages/ContactUs/ContactUs";
 import DesignProcess from "@/components/Pages/DesignProcess/DesignProcess";
 import { microNiche } from "@/data/microNiche";
 import Image from "next/image";
@@ -67,6 +68,7 @@ const Services = () => {
         </ResponsiveContainer>
         <DesignProcess />
         <MarqueeComponent />
+        <ContactUs />
       </div>
     </>
   );

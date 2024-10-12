@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./Button";
 
 const RouteBanner = ({ src, name, title }) => {
@@ -21,7 +22,13 @@ const RouteBanner = ({ src, name, title }) => {
           <h1 className="text-3xl md:text-5xl font-bold">{name}</h1>
           <h2 className="text-xl md:text-3xl font-semibold mt-4">{title}</h2>
           <div className=" mt-8">
-            <Button label="Book a Call" bg="bg-legendary" />
+            <Link href="/discovery">
+              <Button
+                label="Book a Call"
+                bg="bg-primary"
+                hover="hover:bg-legendary"
+              />
+            </Link>
           </div>
         </div>
       </section>

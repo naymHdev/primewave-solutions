@@ -1,5 +1,6 @@
 import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 import SectionName from "@/components/common/SectionName";
+import ContactUs from "@/components/Pages/ContactUs/ContactUs";
 import FaqSection from "@/components/Pages/Faq/FaqSection";
 import ReviewSection from "@/components/Pages/Reviews/Reviews";
 import WhyChoose from "@/components/Pages/WhyChoose/WhyChoose";
@@ -87,6 +88,7 @@ const AboutPage = () => {
       <ReviewSection />
       <WhyChoose />
       <FaqSection />
+      <ContactUs />
     </>
   );
 };

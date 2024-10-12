@@ -17,9 +17,9 @@ export default function Home() {
       <ReviewSection />
       <DesignProcess />
       <Solutions />
-      <ContactUs />
       <MarqueeComponent />
       <FaqSection />
+      <ContactUs />
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../common/Button";
+import Link from "next/link";
 
 const Banner = () => {
   const currentYear = new Date().getFullYear();
@@ -92,11 +93,13 @@ const Banner = () => {
               business.
             </p>
             <div className="mt-6 flex items-center justify-center">
-              <Button
-                label="BOOK A CALL"
-                bg="bg-primary"
-                hover="hover:bg-legendary"
-              />
+              <Link href="/discovery">
+                <Button
+                  label="BOOK A CALL"
+                  bg="bg-primary"
+                  hover="hover:bg-legendary"
+                />
+              </Link>
             </div>
           </div>
           <div className=" hidden md:flex flex-col md:flex-row justify-center items-center gap-2 mt-6  w-10/12 mx-auto text-black md:text-white">

@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import ResponsiveContainer from "@/components/common/ResponsiveContainer";
+import Button from "@/components/common/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +58,16 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Menu Icon */}
-          <div className="">
+          <div className=" flex items-center md:space-x-6">
+            <div className=" hidden md:flex">
+              <Link href="/contact">
+                <Button
+                  label="CONTACT US"
+                  bg="bg-secondary"
+                  hover="hover:bg-legendary"
+                />
+              </Link>
+            </div>
             <button onClick={handleMenuToggle}>
               <RiMenu4Line className="size-10 font-black text-legendary" />
             </button>

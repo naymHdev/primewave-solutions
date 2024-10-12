@@ -36,14 +36,14 @@ const Footer = () => {
                   </p>
 
                   {/* Social media icons */}
-                  <div className="flex items-center space-x-6 py-12">
+                  <div className="flex items-center space-x-4 py-12">
                     <a
                       className="hover:-mt-10 transition-all duration-300"
                       href="https://web.facebook.com/naymHdev"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaFacebook className="text-xl text-legendary" />
+                      <FaFacebook className="text-3xl text-legendary" />
                     </a>
                     <a
                       className="hover:-mt-10 transition-all duration-300"
@@ -51,7 +51,7 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaInstagram className="text-xl text-legendary" />
+                      <FaInstagram className="text-3xl text-legendary" />
                     </a>
                     <a
                       className="hover:-mt-10 transition-all duration-300"
@@ -59,7 +59,7 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaLinkedin className="text-xl text-legendary" />
+                      <FaLinkedin className="text-3xl text-legendary" />
                     </a>
                     <a
                       className="hover:-mt-10 transition-all duration-300"
@@ -67,7 +67,7 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaWhatsapp className="text-xl text-legendary" />
+                      <FaWhatsapp className="text-3xl text-legendary" />
                     </a>
                   </div>
                 </div>
