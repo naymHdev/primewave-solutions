@@ -49,11 +49,14 @@ const DesignProcess = () => {
         title="Explore Our Home Remodeling Website Design Process"
         details="Discover how we craft custom websites tailored for home remodeling contractors, delivering impactful results."
       />
-      <div className=" bg-gradient-to-r from-secondary via-primary to-legendary">
+      <div className=" bg-gradient-to-r from-secondary via-primary to-legendary md:py-10">
         <ResponsiveContainer>
           <section className="overflow-hidden">
             <div ref={triggerRef}>
-              <div ref={sectionRef} className="scroll-section-inner gap-10">
+              <div
+                ref={sectionRef}
+                className="scroll-section-inner gap-2 md:gap-10"
+              >
                 {designSteps?.map((process) => (
                   <div key={process.id} className="scroll-section">
                     <section>
@@ -67,22 +70,22 @@ const DesignProcess = () => {
                           quality={100}
                         />
                       </div>
-                      <div className="mt-10">
-                        <h2 className=" text-4xl font-black text-legendary">
+                      <div className="md:mt-10">
+                        <h2 className="md:text-4xl font-black text-legendary">
                           {process.title}
                         </h2>
-                        <p className=" text-white font-medium mt-3 text-lg">
+                        <p className=" text-white font-medium mt-3 text-sm md:text-lg">
                           {process.description}
                         </p>
-                        <p className="text-white font-semibold text-xl mt-6">
+                        <p className="text-white font-semibold text-xl mt-4 md:mt-6">
                           Here’s how our team does it:
                         </p>
-                        <div className=" mt-6 font-medium text-white">
+                        <div className="md:mt-6 font-medium text-white">
                           {process.details.map((step, index) => (
                             <div key={index}>
-                              <ul className="flex items-center gap-3 mt-3">
+                              <ul className="flex md:items-center gap-1 md:gap-3 mt-3">
                                 <MdOutlineArrowForwardIos className=" text-legendary text-2xl" />
-                                <li className=" text-lg font-semibold text-white">
+                                <li className=" text-sm md:text-lg font-semibold text-white">
                                   {step}
                                 </li>
                               </ul>

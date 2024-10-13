@@ -84,7 +84,7 @@ const Banner = () => {
               Elevate Your <span className=" text-legendary">Remodeling</span>{" "}
               Business
             </h1>
-            <p className="text-white mt-8 text-lg md:w-1/2 w-11/12 mx-auto">
+            <p className="text-white mt-6 text-lg md:w-1/2 w-11/12 mx-auto">
               We build modern, conversion-focused websites for{" "}
               <span className="font-extrabold text-legendary">
                 remodeling contractors
@@ -92,7 +92,7 @@ const Banner = () => {
               . Showcase your portfolio, attract more clients, and grow your
               business.
             </p>
-            <div className="mt-14 flex items-center justify-center">
+            <div className="mt-12 flex items-center justify-center">
               <Link href="/discovery">
                 <Button
                   label="BOOK A CALL"
