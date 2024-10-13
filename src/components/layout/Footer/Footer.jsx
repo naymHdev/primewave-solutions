@@ -55,7 +55,7 @@ const Footer = () => {
                     </a>
                     <a
                       className="hover:-mt-10 transition-all duration-300"
-                      href="https://www.linkedin.com/in/naymhdev"
+                      href="https://www.instagram.com/remodelwithnaym"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -12,6 +12,7 @@ import {
 import Link from "next/link";
 import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 import Button from "@/components/common/Button";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,15 +46,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary">
       <ResponsiveContainer>
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="text-4xl font-extrabold">
-            <Link href="/">
-              <span className="text-legendary font-black font-montserrat">
-                PrimeWave
-              </span>
+            <Link href="/" className=" absolute -top-[87px]">
+              <Image
+                src="/images/primeWave-white.png"
+                alt="Trustworthiness Icon"
+                width={250}
+                height={250}
+                priority={true}
+                quality={100}
+              />
             </Link>
           </div>
 
@@ -69,7 +75,7 @@ const Navbar = () => {
               </Link>
             </div>
             <button onClick={handleMenuToggle}>
-              <RiMenu4Line className="size-10 font-black text-legendary" />
+              <RiMenu4Line className="size-10 font-black text-white" />
             </button>
           </div>
         </div>
@@ -151,7 +157,7 @@ const Navbar = () => {
           </a>
           <a
             className="hover:-mt-10 transition-all duration-300 rounded-full p-2 md:p-3 bg-[#1267b6]"
-            href="https://www.linkedin.com/in/naymhdev"
+            href="https://www.instagram.com/remodelwithnaym"
             target="_blank"
             rel="noopener noreferrer"
           >
