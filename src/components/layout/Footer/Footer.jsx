@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import "./footer.css";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,14 +21,21 @@ const Footer = () => {
     <>
       <div className=" bg-[#121212] mt-20">
         <ResponsiveContainer>
-          <footer className=" grid grid-cols-1 md:grid-cols-7 border-l border-l-[#1D1D1D] pl-1">
+          <footer className="relative grid grid-cols-1 md:grid-cols-7 border-l border-l-[#1D1D1D] pl-1">
             <div className=" col-span-full md:col-span-5 py-20">
               <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <h2 className=" text-3xl font-black text-legendary">
-                    PrimeWave
-                  </h2>
-                  <p className=" text-gray-400 font-medium mt-6">
+                  <Link href="/" className=" absolute left-0 -top-[32px]">
+                    <Image
+                      src="/images/primeWave-white.png"
+                      alt="Trustworthiness Icon"
+                      width={250}
+                      height={250}
+                      priority={true}
+                      quality={100}
+                    />
+                  </Link>
+                  <p className=" text-gray-400 font-medium mt-[48px]">
                     We craft captivating websites that boost your brand's
                     digital footprint. Our team's expertise spans design,
                     development, and marketing. We deliver sites that shine
@@ -36,7 +44,7 @@ const Footer = () => {
                   </p>
 
                   {/* Social media icons */}
-                  <div className="flex items-center space-x-4 py-12">
+                  <div className="flex items-center space-x-5 py-12">
                     <a
                       className="hover:-mt-10 transition-all duration-300"
                       href="https://web.facebook.com/naymHdev"

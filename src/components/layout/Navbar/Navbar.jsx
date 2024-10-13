@@ -50,7 +50,7 @@ const Navbar = () => {
       <ResponsiveContainer>
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="text-4xl font-extrabold">
+          <div className="">
             <Link href="/" className=" absolute -top-[87px]">
               <Image
                 src="/images/primeWave-white.png"
