@@ -25,7 +25,7 @@ const MainServices = () => {
                 quality={100}
               />
               <div className="mt-6">
-                <h2 className="text-2xl font-bold text-secondary">
+                <h2 className="text-2xl font-bold text-secondary dark:text-white">
                   {service.category}
                 </h2>
                 <p className="mt-2 font-medium text-foreground">

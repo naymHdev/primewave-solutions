@@ -15,13 +15,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 md:p-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-12">
       {/* Left Section - Contact Form */}
       <section className="">
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           {/* Name */}
           <div>
-            <label className="block text-sm font-medium text-secondary mb-1">
+            <label className="block text-sm font-medium text-secondary dark:text-white mb-1">
               Name
             </label>
             <input
@@ -37,7 +37,7 @@ const ContactForm = () => {
 
           {/* Company Name */}
           <div>
-            <label className="block text-sm font-medium text-secondary mb-1">
+            <label className="block text-sm font-medium text-secondary dark:text-white mb-1">
               Company Name
             </label>
             <input
@@ -55,7 +55,7 @@ const ContactForm = () => {
 
           {/* Email */}
           <div>
-            <label className="block text-sm font-medium text-secondary mb-1">
+            <label className="block text-sm font-medium text-secondary dark:text-white mb-1">
               Email
             </label>
             <input
@@ -79,7 +79,7 @@ const ContactForm = () => {
 
           {/* Phone */}
           <div>
-            <label className="block text-sm font-medium text-secondary mb-1">
+            <label className="block text-sm font-medium text-secondary dark:text-white mb-1">
               Phone
             </label>
             <input
@@ -97,7 +97,7 @@ const ContactForm = () => {
 
           {/* Message */}
           <div>
-            <label className="block text-sm font-medium text-secondary mb-1">
+            <label className="block text-sm font-medium text-secondary dark:text-white mb-1">
               Message
             </label>
             <textarea

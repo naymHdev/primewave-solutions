@@ -23,7 +23,9 @@ const ReviewSection = () => {
         <div className="mt-28 grid grid-cols-1 md:grid-cols-7 gap-4 items-center">
           <div className=" col-span-full md:col-span-2">
             <div className=" flex flex-col items-center justify-start space-y-2 text-center">
-              <h3 className="font-black text-xl text-secondary">EXCELLENT</h3>
+              <h3 className="font-black text-xl text-secondary dark:text-white">
+                EXCELLENT
+              </h3>
               <Image
                 src="/icons/rating.png"
                 alt="Google Rating in PrimeWave Solutions"
@@ -34,7 +36,7 @@ const ReviewSection = () => {
               />
               <p className=" font-medium">
                 Based on{" "}
-                <span className="font-bold underline text-secondary">
+                <span className="font-bold underline text-secondary dark:text-gray-400">
                   {reviews?.length} reviews
                 </span>
               </p>

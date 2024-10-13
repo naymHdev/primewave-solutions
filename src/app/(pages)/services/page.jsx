@@ -26,20 +26,20 @@ const Services = () => {
               <div key={index} className="mt-12 lg:flex lg:space-x-12">
                 {/* Text Content */}
                 <div className="lg:w-1/2 mb-8 lg:mb-0">
-                  <h2 className="text-2xl font-bold mb-2 text-secondary">
+                  <h2 className="text-2xl font-bold mb-2 text-secondary dark:text-white">
                     {niche.title}
                   </h2>
-                  <h3 className="text-lg text-gray-600 mb-4">
+                  <h3 className="text-lg text-gray-600 dark:text-white mb-4">
                     {niche.category}
                   </h3>
-                  <p className="text-base text-gray-700 mb-6">
+                  <p className="text-base text-gray-700 dark:text-foreground mb-6">
                     {niche.description}
                   </p>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2 text-secondary">
+                    <h4 className="text-lg font-semibold mb-2 text-secondary dark:text-white">
                       Key Steps:
                     </h4>
-                    <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                    <ul className="list-disc pl-5 text-gray-700 dark:text-foreground space-y-2">
                       {niche.steps.map((step, index) => (
                         <li key={index}>{step}</li>
                       ))}

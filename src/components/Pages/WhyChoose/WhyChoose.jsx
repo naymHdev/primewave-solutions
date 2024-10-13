@@ -22,10 +22,10 @@ const WhyChoose = () => {
                     0{feature.id}.
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-4 text-secondary">
+                    <h3 className="text-2xl font-bold mb-4 text-secondary dark:text-white">
                       {`${feature.title}`}
                     </h3>
-                    <p className="text-black font-medium">
+                    <p className="text-black dark:text-foreground font-medium">
                       {feature.description}
                     </p>
                   </div>

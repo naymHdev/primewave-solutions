@@ -31,7 +31,7 @@ const AboutPage = () => {
         <div className="flex flex-col md:flex-row items-center justify-between mt-16 space-y-8 md:space-y-0">
           {/* Left Section */}
           <section className="flex-1 md:pr-8">
-            <h3 className="text-secondary text-2xl md:text-3xl font-bold md:font-black leading-tight md:leading-snug">
+            <h3 className="text-secondary dark:text-white text-2xl md:text-3xl font-bold md:font-black leading-tight md:leading-snug">
               Crafting Digital Foundations for Remodeling Success
             </h3>
 

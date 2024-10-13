@@ -31,10 +31,10 @@ const FaqSection = () => {
               {primeWaveFaq?.map((faq) => (
                 <div
                   key={faq.id}
-                  className="collapse collapse-plus mt-6 border-b border-b-secondary rounded-none"
+                  className="collapse collapse-plus mt-6 border-b border-b-secondary dark:border-b-legendary rounded-none"
                 >
                   <input type="radio" name="my-accordion-3" />
-                  <div className="collapse-title md:text-xl font-semibold text-secondary">
+                  <div className="collapse-title md:text-xl font-semibold text-secondary dark:text-white">
                     {faq.question}
                   </div>
                   <div className="collapse-content">

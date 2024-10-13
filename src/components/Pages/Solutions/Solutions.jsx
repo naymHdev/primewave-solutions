@@ -31,7 +31,7 @@ const Solutions = () => {
                 <div className="p-6 space-y-8 mt-4">
                   {solution.left_panel.points?.map((itm, index) => (
                     <ul key={index} className="flex items-center gap-4">
-                      <RiMessage3Line className=" size-16 text-secondary" />
+                      <RiMessage3Line className=" size-16 text-secondary dark:text-legendary" />
                       <li className="font-medium">{itm}</li>
                     </ul>
                   ))}
@@ -59,7 +59,7 @@ const Solutions = () => {
                 <div className="p-6 space-y-8 mt-4">
                   {solution?.right_panel.points?.map((itm, index) => (
                     <ul key={index} className="flex items-center gap-4">
-                      <MdVerified className="size-10 text-secondary" />
+                      <MdVerified className="size-10 text-secondary dark:text-legendary" />
                       <li className=" font-semibold">{itm}</li>
                     </ul>
                   ))}
