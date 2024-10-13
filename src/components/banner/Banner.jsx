@@ -84,7 +84,7 @@ const Banner = () => {
               Elevate Your <span className=" text-legendary">Remodeling</span>{" "}
               Business
             </h1>
-            <p className="text-white mt-4 text-lg md:w-1/2 w-11/12 mx-auto">
+            <p className="text-white mt-8 text-lg md:w-1/2 w-11/12 mx-auto">
               We build modern, conversion-focused websites for{" "}
               <span className="font-extrabold text-legendary">
                 remodeling contractors
@@ -92,7 +92,7 @@ const Banner = () => {
               . Showcase your portfolio, attract more clients, and grow your
               business.
             </p>
-            <div className="mt-6 flex items-center justify-center">
+            <div className="mt-14 flex items-center justify-center">
               <Link href="/discovery">
                 <Button
                   label="BOOK A CALL"
@@ -131,7 +131,7 @@ const Banner = () => {
           </div>
         </section>
 
-        <section className="bg-secondary mt-[90px] md:mt-0 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <section className="bg-secondary mt-[50px] md:mt-0 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="flex flex-col items-center">
             <Image
               src="/icons/growth.png"
