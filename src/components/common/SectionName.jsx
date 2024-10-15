@@ -10,7 +10,7 @@ const SectionName = ({ name, title, details }) => {
               <h3 className="text-secondary dark:text-gray-300 text-lg font-semibold tracking-wider uppercase">
                 {name}
               </h3>
-              <div className="border-b border-legendary w-20 md:w-14 group-hover:w-24 transition-all duration-300 mt-1" />
+              <div className="border-b-[3px] border-legendary w-20 md:w-14 group-hover:w-[150px] transition-all duration-300 mt-" />
             </div>
             <div className="col-span-full md:col-span-5 mt-2 md:mt-0">
               <h2 className="text-2xl md:text-5xl text-secondary dark:text-white font-semibold md:font-bold leading-tight">

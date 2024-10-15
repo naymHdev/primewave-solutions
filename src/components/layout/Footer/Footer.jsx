@@ -116,7 +116,7 @@ const Footer = () => {
               </h2>
 
               <div className="flex flex-col items-center justify-center">
-                <Link href="#">
+                <Link href="/discovery">
                   <div className="wave-button text-white font-medium">
                     <span>
                       Let's Talk <MdOutlineArrowOutward size={20} />
