@@ -3,7 +3,7 @@ import ResponsiveContainer from "./ResponsiveContainer";
 const SectionName = ({ name, title, details }) => {
   return (
     <>
-      <div className="py-8 md:py-12 mt-6 md:mt-24">
+      <div className="py-8 md:py-12 mt-6 md:mt-16">
         <ResponsiveContainer>
           <section className="grid grid-cols-1 md:grid-cols-7 gap-2">
             <div className="col-span-full md:col-span-2 group">

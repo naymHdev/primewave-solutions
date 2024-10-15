@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../common/Button";
-import Link from "next/link";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+import ResponsiveContainer from "../common/ResponsiveContainer";
 
 const Banner = () => {
   const currentYear = new Date().getFullYear();
@@ -78,20 +79,105 @@ const Banner = () => {
             />
           </video>
         </div>
-        <section className="absolute md:top-0 -top-[210px] w-full h-full flex flex-col justify-center items-center">
+
+        {/* Banner Text Section */}
+        <ResponsiveContainer>
+          <div className="absolute top-0 py-10 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section>
+              <div>
+                <h1 className="text-4xl md:text-5xl leading-8 text-white font-black">
+                  Elevate Your{" "}
+                  <span className=" text-legendary">Remodeling</span> Business
+                </h1>
+                <p className="text-white mt-4 text-lg font-medium">
+                  We build modern, conversion-focused websites for{" "}
+                  <span className="font-extrabold text-legendary">
+                    remodeling contractors
+                  </span>
+                  . Showcase your portfolio, attract more clients, and grow your
+                  business.
+                </p>
+              </div>
+              <div className=" lg:flex items-center space-y-4 lg:space-y-0 lg:space-x-4 mt-6 lg:mt-10">
+                <div className="flex gap-2 items-center">
+                  <Image
+                    src="/icons/growth.png"
+                    alt="Growth Icon"
+                    width={40}
+                    height={40}
+                    priority={true}
+                    quality={100}
+                  />
+                  <p className="font-bold mt-2 text-white">More Traffic</p>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <Image
+                    src="/icons/trustworthiness.png"
+                    alt="Trustworthiness Icon"
+                    width={40}
+                    height={40}
+                    priority={true}
+                    quality={100}
+                  />
+                  <p className="font-bold mt-2 text-white">
+                    Better Lead Quality
+                  </p>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <Image
+                    src="/icons/selling.png"
+                    alt="Selling Icon"
+                    width={40}
+                    height={40}
+                    priority={true}
+                    quality={100}
+                  />
+                  <p className="font-bold mt-2 text-white">
+                    Sell More Remodeling
+                  </p>
+                </div>
+              </div>
+              <div className=" mt-6 flex items-center gap-4">
+                <VscWorkspaceTrusted className=" size-8 text-legendary" />
+                <h3 className="text-2xl font-extrabold lg:font-black text-white">
+                  100% Money Back Guarantee
+                </h3>
+              </div>
+              <div className="lg:mt-10 mt-6 hidden lg:flex items-center justify-center text-center text-white space-x-2">
+                <h2 className="text-sm font-bold">
+                  Top Rated Agency {currentYear}
+                </h2>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="/icons/google-text.png"
+                    alt="Google Text Logo"
+                    width={70}
+                    height={70}
+                    priority={true}
+                    quality={100}
+                  />
+                  <Image
+                    src="/icons/rating.png"
+                    alt="Google Rating in PrimeWave Solutions"
+                    width={60}
+                    height={60}
+                    priority={true}
+                    quality={100}
+                  />
+                  <h2 className="text-sm font-bold">5.0</h2>
+                </div>
+                <div>
+                  <p className="text-sm">verified by Trustindex</p>
+                </div>
+              </div>
+            </section>
+            <section></section>
+          </div>
+        </ResponsiveContainer>
+
+        {/* <section className="absolute md:top-0 -top-[210px] w-full h-full flex flex-col justify-center items-center">
           <div className="text-center">
-            <h1 className="text-3xl md:text-5xl text-white font-black">
-              Elevate Your <span className=" text-legendary">Remodeling</span>{" "}
-              Business
-            </h1>
-            <p className="text-white mt-6 text-lg md:w-1/2 w-11/12 mx-auto">
-              We build modern, conversion-focused websites for{" "}
-              <span className="font-extrabold text-legendary">
-                remodeling contractors
-              </span>
-              . Showcase your portfolio, attract more clients, and grow your
-              business.
-            </p>
+         
             <div className="mt-12 flex items-center justify-center">
               <Link href="/contact">
                 <Button
@@ -103,73 +189,11 @@ const Banner = () => {
             </div>
           </div>
           <div className=" hidden md:flex flex-col md:flex-row justify-center items-center gap-2 mt-6  w-10/12 mx-auto text-black md:text-white">
-            <h2 className=" font-bold text-sm">
-              Top Rated Agency {currentYear}
-            </h2>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/icons/google-text.png"
-                alt="Google Text Logo"
-                width={70}
-                height={70}
-                priority={true}
-                quality={100}
-              />
-              <Image
-                src="/icons/rating.png"
-                alt="Google Rating in PrimeWave Solutions"
-                width={60}
-                height={60}
-                priority={true}
-                quality={100}
-              />
-              <h2 className=" font-bold text-sm">5.0</h2>
-            </div>
-            <div>
-              <p className="text-sm ">verified by Trustindex</p>
-            </div>
+           
           </div>
-        </section>
+        </section> */}
 
-        <section className="bg-secondary mt-[50px] md:mt-0 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="flex flex-col items-center">
-            <Image
-              src="/icons/growth.png"
-              alt="Growth Icon"
-              width={70}
-              height={70}
-              priority={true}
-              quality={100}
-            />
-            <p className="text-lg font-bold mt-2 text-white">More Traffic</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src="/icons/trustworthiness.png"
-              alt="Trustworthiness Icon"
-              width={70}
-              height={70}
-              priority={true}
-              quality={100}
-            />
-            <p className="text-lg font-bold mt-2 text-white">
-              Better Lead Quality
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src="/icons/selling.png"
-              alt="Selling Icon"
-              width={70}
-              height={70}
-              priority={true}
-              quality={100}
-            />
-            <p className="text-lg font-bold mt-2 text-white">
-              Sell More Remodeling
-            </p>
-          </div>
-        </section>
+        {/* <section className="bg-secondary mt-[50px] md:mt-0 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"></section> */}
       </div>
     </>
   );

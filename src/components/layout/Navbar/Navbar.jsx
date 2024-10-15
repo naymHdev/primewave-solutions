@@ -1,6 +1,11 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import {
+  easeInOut,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
 import { RiMenu4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import {
@@ -15,7 +20,18 @@ import Button from "@/components/common/Button";
 import Image from "next/image";
 
 const Navbar = () => {
+  const { scrollY } = useScroll();
   const [isOpen, setIsOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
@@ -46,7 +62,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary">
+    <motion.nav
+      className="sticky top-0 left-0 right-0 z-50 bg-secondary"
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.50, ease: easeInOut }}
+    >
       <ResponsiveContainer>
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -186,7 +210,7 @@ const Navbar = () => {
           <p className=" font-medium text-foreground"></p>
         </div>
       </motion.div>
-    </nav>
+    </motion.nav>
   );
 };
 
