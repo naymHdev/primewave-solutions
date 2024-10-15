@@ -1,5 +1,6 @@
 export const services = [
   {
+    id: 1,
     category: "Branding",
     description:
       "Develop a cohesive brand identity that reflects your unique style and resonates with your target audience. Our branding services include logo design, color schemes, and overall visual identity.",
@@ -12,6 +13,7 @@ export const services = [
     image: "/icons/branding.png",
   },
   {
+    id: 2,
     category: "Design",
     description:
       "Craft stunning and user-friendly designs tailored to showcase your remodeling projects. Our design services prioritize aesthetics and functionality for an engaging user experience.",
@@ -24,6 +26,7 @@ export const services = [
     image: "/icons/web-design.png",
   },
   {
+    id: 3,
     category: "Content",
     description:
       "Create engaging and informative content that tells your story and connects with your audience. Our content services include copywriting, blog posts, and portfolio descriptions.",
@@ -36,6 +39,7 @@ export const services = [
     image: "/icons/content.png",
   },
   {
+    id: 4,
     category: "Strategy",
     description:
       "Develop a comprehensive strategy to position your brand effectively in the market. Our strategy services encompass market analysis, competitive research, and tailored marketing plans.",
@@ -48,6 +52,7 @@ export const services = [
     image: "/icons/strategy.png",
   },
   {
+    id: 5,
     category: "Marketing",
     description:
       "Implement targeted marketing campaigns to drive traffic and convert leads into clients. Our marketing services include social media marketing, email campaigns, and PPC advertising.",
@@ -60,6 +65,7 @@ export const services = [
     image: "/icons/marketing.png",
   },
   {
+    id: 6,
     category: "Development",
     description:
       "Build robust and scalable websites that enhance your online presence. Our development services focus on functionality, security, and performance optimization.",

@@ -174,10 +174,10 @@ const Banner = () => {
             <section>
               <div className="relative w-full h-full">
                 <Image
+                  className=" object-cover"
                   src="/images/primeWaveBanner.png"
                   alt="Banner Image"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   priority={true}
                   quality={100}
                 />

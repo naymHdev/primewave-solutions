@@ -8,9 +8,9 @@ const MainServices = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-        {services?.map((service, index) => (
+        {services?.map((service) => (
           <motion.div
-            key={index}
+            key={service.id}
             className="relative border p-8 border-secondary overflow-hidden"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
@@ -41,17 +41,17 @@ const MainServices = () => {
               transition={{ duration: 0.3 }}
             >
               <h3 className="font-bold text-3xl">{service.category}</h3>
-              <ul className="space-y-2 mt-6">
-                {service.features.map((feature, idx) => (
+              <div className="space-y-2 mt-6">
+                {service.features.map((feature, index) => (
                   <>
                     <hr />
-                    <li key={idx} className="font-medium">
+                    <p key={index} className="font-medium list-none">
                       {feature}
-                    </li>
+                    </p>
                   </>
                 ))}
                 <hr />
-              </ul>
+              </div>
               <button className="border border-white px-5 font-medium py-2 mt-6">
                 Learn More
               </button>

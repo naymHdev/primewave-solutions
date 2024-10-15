@@ -15,11 +15,10 @@ const FeaturedWorksCard = ({ portfolio }) => {
         <Image
           src={image}
           alt={projectTitle}
-          layout="fill"
-          objectFit="cover"
+          fill
           priority={true}
           quality={100}
-          className="group-hover:scale-110 transition-transform duration-500 ease-out"
+          className="group-hover:scale-110 object-cover transition-transform duration-500 ease-out"
         />
       </motion.div>
 

@@ -16,8 +16,8 @@ const Services = () => {
       <div className="">
         <ResponsiveContainer>
           <section className="">
-            {microNiche?.map((niche, index) => (
-              <div key={index} className="mt-12 lg:flex lg:space-x-12">
+            {microNiche?.map((niche) => (
+              <div key={niche.category} className="mt-12 lg:flex lg:space-x-12">
                 {/* Text Content */}
                 <div className="lg:w-1/2 mb-8 lg:mb-0">
                   <h2 className="text-2xl font-bold mb-2 text-secondary dark:text-white">

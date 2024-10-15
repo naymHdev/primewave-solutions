@@ -51,11 +51,11 @@ export const metadata = {
       "PrimeWave Web Design | Custom Websites for Remodelers & Home Designers",
     description:
       "We specialize in creating stunning, high-conversion websites for kitchen remodelers, bathroom renovators, flooring installers, home painters, and more. Elevate your business with a professional online presence.",
-    url: "https://primewave-solutions.vercel.app",
+    url: "https://primewavesolutions.vercel.app",
     siteName: "PrimeWave Web Design",
     images: [
       {
-        url: "https://primewave-solutions.vercel.app", // Example image URL, update with your actual one
+        // url: "https://primewavesolutions.vercel.app", // Example image URL, update with your actual one
         width: 1200,
         height: 630,
         alt: "PrimeWave Web Design for Contractors",
@@ -70,15 +70,15 @@ export const metadata = {
       "PrimeWave Web Design | Stunning Websites for Home Improvement Professionals",
     description:
       "PrimeWave provides professional web design services for contractors and home designers, including kitchen remodelers, bathroom renovators, and more.",
-    image: "https://primewave-solutions.vercel.app", // Example image URL
+    // image: "https://primewavesolutions.vercel.app", // Example image URL
   },
   // Schema.org structured data for better SEO
   structuredData: {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "PrimeWave Web Design",
-    url: "https://primewave-solutions.vercel.app",
-    logo: "https://primewave-solutions.vercel.app", // Example logo URL
+    url: "https://primewavesolutions.vercel.app",
+    // logo: "https://primewavesolutions.vercel.app", // Example logo URL
     description:
       "PrimeWave Web Design offers tailored web design services for contractors, remodelers, and home improvement professionals in the USA, including kitchen remodeling, bathroom renovation, flooring installation, and more.",
     sameAs: [
@@ -100,9 +100,6 @@ export const metadata = {
       availableLanguage: ["English"],
     },
   },
-  // Additional Meta Tags
-  author: "PrimeWave Solutions",
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({ children }) {

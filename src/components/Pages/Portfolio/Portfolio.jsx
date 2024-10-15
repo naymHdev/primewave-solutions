@@ -8,8 +8,8 @@ const Portfolio = () => {
     <>
       <ResponsiveContainer>
         <div className="grid grid-cols-1 md:grid-cols-2">
-          {works.map((portfolio, index) => (
-            <div className="relative w-full h-[450px]" key={index}>
+          {works.map((portfolio) => (
+            <div className="relative w-full h-[450px]" key={portfolio.id}>
               <FeaturedWorksCard portfolio={portfolio} />
             </div>
           ))}

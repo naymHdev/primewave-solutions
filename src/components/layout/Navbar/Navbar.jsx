@@ -123,7 +123,7 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <motion.div
-          className="flex flex-col items-end space-y-3 px-10 transition-all duration-300"
+          className="flex z-10 flex-col items-end space-y-3 px-10 transition-all duration-300"
           initial="hidden"
           animate="visible"
           variants={navVariants}
