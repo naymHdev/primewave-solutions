@@ -82,7 +82,7 @@ const Banner = () => {
 
         {/* Banner Text Section */}
         <ResponsiveContainer>
-          <div className="absolute top-0 py-10 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="absolute top-0 py-10 lg:py-28 grid grid-cols-1 md:grid-cols-2 gap-6">
             <section>
               <div>
                 <h1 className="text-4xl md:text-5xl leading-8 text-white font-black">
@@ -137,13 +137,13 @@ const Banner = () => {
                   </p>
                 </div>
               </div>
-              <div className=" mt-6 flex items-center gap-4">
+              <div className=" mt-8 flex items-center gap-4">
                 <VscWorkspaceTrusted className=" size-8 text-legendary" />
                 <h3 className="text-2xl font-extrabold lg:font-black text-white">
                   100% Money Back Guarantee
                 </h3>
               </div>
-              <div className="lg:mt-10 mt-6 hidden lg:flex items-center justify-center text-center text-white space-x-2">
+              <div className="lg:mt-10 mt-6 hidden lg:flex items-center text-white space-x-2">
                 <h2 className="text-sm font-bold">
                   Top Rated Agency {currentYear}
                 </h2>
@@ -171,29 +171,20 @@ const Banner = () => {
                 </div>
               </div>
             </section>
-            <section></section>
+            <section>
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/primeWaveBanner.png"
+                  alt="Banner Image"
+                  layout="fill"
+                  objectFit="cover"
+                  priority={true}
+                  quality={100}
+                />
+              </div>
+            </section>
           </div>
         </ResponsiveContainer>
-
-        {/* <section className="absolute md:top-0 -top-[210px] w-full h-full flex flex-col justify-center items-center">
-          <div className="text-center">
-         
-            <div className="mt-12 flex items-center justify-center">
-              <Link href="/contact">
-                <Button
-                  label="Contact Us"
-                  bg="bg-primary"
-                  hover="hover:bg-legendary"
-                />
-              </Link>
-            </div>
-          </div>
-          <div className=" hidden md:flex flex-col md:flex-row justify-center items-center gap-2 mt-6  w-10/12 mx-auto text-black md:text-white">
-           
-          </div>
-        </section> */}
-
-        {/* <section className="bg-secondary mt-[50px] md:mt-0 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"></section> */}
       </div>
     </>
   );

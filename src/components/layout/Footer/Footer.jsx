@@ -121,7 +121,7 @@ const Footer = () => {
                     <span>
                       Let's Talk <MdOutlineArrowOutward size={20} />
                     </span>
-                    <div class="wave"></div>
+                    <div className="wave"></div>
                   </div>
                 </Link>
               </div>
