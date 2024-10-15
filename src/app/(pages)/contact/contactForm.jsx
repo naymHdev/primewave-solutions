@@ -1,7 +1,9 @@
 "use client";
 
 import Button from "@/components/common/Button";
+import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const ContactForm = () => {
   const {
@@ -10,8 +12,51 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
+  const sendEmail = (params) => {
+    // Show a loading toast while sending the email
+    const toastId = toast.loading("Sending your message...");
+
+    // Call the emailjs send function
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        params,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          // On success, show success toast and update the toast to success state
+          toast.success(
+            "I have received your message, I will get back to you soon!",
+            {
+              id: toastId,
+            }
+          );
+        },
+        (error) => {
+          // On failure, show error toast and update the toast to error state
+          console.error("FAILED...", error.text);
+          toast.error(
+            "There was an error sending your message, please try again later!",
+            {
+              id: toastId,
+            }
+          );
+        }
+      );
+  };
+
   const onSubmit = (data) => {
-    console.log(data); // Handle form submission
+    const templateParams = {
+      name: data.name,
+      company: data.company,
+      email: data.email,
+      phone: data.phone,
+      message: data.message,
+    };
+
+    sendEmail(templateParams);
   };
 
   return (
