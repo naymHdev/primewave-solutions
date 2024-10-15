@@ -8,12 +8,33 @@ import { designSteps } from "@/data/designProcess";
 import Image from "next/image";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import SectionName from "@/components/common/SectionName";
+import {
+  animate,
+  easeInOut,
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+} from "framer-motion";
+
+// Colors
+const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 const DesignProcess = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
-
   gsap.registerPlugin(ScrollTrigger);
+
+  // framer motion
+  const color = useMotionValue(COLORS[0]);
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
+  useEffect(() => {
+    animate(color, COLORS, {
+      ease: easeInOut,
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
+  });
 
   useEffect(() => {
     const pin = gsap.fromTo(
@@ -49,7 +70,10 @@ const DesignProcess = () => {
         title="Explore Our Home Remodeling Website Design Process"
         details="Discover how we craft custom websites tailored for home remodeling contractors, delivering impactful results."
       />
-      <div className=" bg-gradient-to-r from-secondary via-primary to-legendary md:py-10">
+      <motion.div
+        style={{ backgroundImage }}
+        className="md:py-10"
+      >
         <ResponsiveContainer>
           <section className="overflow-hidden">
             <div ref={triggerRef}>
@@ -100,7 +124,7 @@ const DesignProcess = () => {
             </div>
           </section>
         </ResponsiveContainer>
-      </div>
+      </motion.div>
     </>
   );
 };
