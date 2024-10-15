@@ -66,9 +66,9 @@ const Navbar = () => {
           {/* Hamburger Menu Icon */}
           <div className=" flex items-center md:space-x-6">
             <div className=" hidden md:flex">
-              <Link href="/contact">
+              <Link href="/discovery">
                 <Button
-                  label="CONTACT US"
+                  label="Book a Call"
                   bg="bg-secondary"
                   hover="hover:bg-legendary"
                 />

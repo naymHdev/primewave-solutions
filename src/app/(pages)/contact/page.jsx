@@ -3,18 +3,10 @@ import SectionName from "@/components/common/SectionName";
 import React from "react";
 import ContactForm from "./contactForm";
 import ReviewSection from "@/components/Pages/Reviews/Reviews";
-import RouteBanner from "@/components/common/RouteBanner";
 
 const ContactUs = () => {
   return (
     <>
-      <RouteBanner
-        src="/videos/contactUS.mp4"
-        name="Let's Transform Your Home Together"
-        title="Expertise in Remodeling & Design"
-        subtitle="Reach out today for a consultation and let us bring your dream home
-            to life."
-      />
       <div className=" mt-16 md:mt-0">
         <SectionName
           name="We're Here to Help"

@@ -1,5 +1,4 @@
 import ResponsiveContainer from "@/components/common/ResponsiveContainer";
-import RouteBanner from "@/components/common/RouteBanner";
 import SectionName from "@/components/common/SectionName";
 import MarqueeComponent from "@/components/MarqueeComponent";
 import ContactUs from "@/components/Pages/ContactUs/ContactUs";
@@ -10,11 +9,6 @@ import Image from "next/image";
 const Services = () => {
   return (
     <>
-      <RouteBanner
-        src="/videos/services.mp4"
-        name="Tailored Remodeling Solutions for Every Home"
-        title="Expert Remodeling Solutions That Bring Your Dream Space to Life"
-      />
       <SectionName
         name="From Blueprint To Build"
         title="Fusing Design, Craftsmanship & Technology To Transform Homes"

@@ -10,16 +10,6 @@ import { FaCheck } from "react-icons/fa";
 const AboutPage = () => {
   return (
     <>
-      <div>
-        <Image
-          className=" w-full h-auto"
-          src="/videos/abouts.gif"
-          alt="Gif Description"
-          width={500}
-          height={300}
-          priority={true}
-        />
-      </div>
       <div className="">
         <SectionName
           name="Our Mission"

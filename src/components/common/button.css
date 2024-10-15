@@ -38,7 +38,6 @@
   overflow: hidden;
   padding: 0.7rem 2rem;
   position: relative;
-  text-transform: uppercase;
   border-radius: 50px;
 }
 @-webkit-keyframes pulse {

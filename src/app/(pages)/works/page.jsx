@@ -1,4 +1,3 @@
-import RouteBanner from "@/components/common/RouteBanner";
 import SectionName from "@/components/common/SectionName";
 import ContactUs from "@/components/Pages/ContactUs/ContactUs";
 import DesignProcess from "@/components/Pages/DesignProcess/DesignProcess";
@@ -9,11 +8,6 @@ import TechToolsUsed from "@/components/Pages/Portfolio/TechToolsUsed";
 const Portfolios = () => {
   return (
     <>
-      <RouteBanner
-        src="/videos/work fishing.mp4"
-        name="Crafting Exceptional Digital Experiences that Drive Success"
-        title=""
-      />
       <div>
         <SectionName
           name="FEATURED WORK"

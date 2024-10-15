@@ -159,7 +159,7 @@ const ContactForm = () => {
           </div>
 
           <Button
-            label="Submit"
+            label="Get a Quote"
             type="submit"
             bg="bg-primary"
             hover="hover:bg-legendary"

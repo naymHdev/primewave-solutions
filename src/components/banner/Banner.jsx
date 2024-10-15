@@ -93,9 +93,9 @@ const Banner = () => {
               business.
             </p>
             <div className="mt-12 flex items-center justify-center">
-              <Link href="/discovery">
+              <Link href="/contact">
                 <Button
-                  label="BOOK A CALL"
+                  label="Contact Us"
                   bg="bg-primary"
                   hover="hover:bg-legendary"
                 />
