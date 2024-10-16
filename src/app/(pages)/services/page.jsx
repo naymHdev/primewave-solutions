@@ -1,3 +1,4 @@
+"use client";
 import ResponsiveContainer from "@/components/common/ResponsiveContainer";
 import SectionName from "@/components/common/SectionName";
 import MarqueeComponent from "@/components/MarqueeComponent";
@@ -5,6 +6,7 @@ import ContactUs from "@/components/Pages/ContactUs/ContactUs";
 import DesignProcess from "@/components/Pages/DesignProcess/DesignProcess";
 import { microNiche } from "@/data/microNiche";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
@@ -17,7 +19,10 @@ const Services = () => {
         <ResponsiveContainer>
           <section className="">
             {microNiche?.map((niche) => (
-              <div key={niche.category} className="mt-12 lg:flex lg:space-x-12">
+              <motion.div
+                key={niche.category}
+                className="mt-12 lg:flex lg:space-x-12"
+              >
                 {/* Text Content */}
                 <div className="lg:w-1/2 mb-8 lg:mb-0">
                   <h2 className="text-2xl font-bold mb-2 text-secondary dark:text-white">
@@ -56,7 +61,7 @@ const Services = () => {
                         600px"
                   />
                 </div>
-              </div>
+              </motion.div>
             ))}
           </section>
         </ResponsiveContainer>
