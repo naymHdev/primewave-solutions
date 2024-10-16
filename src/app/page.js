@@ -9,6 +9,10 @@ import ReviewSection from "@/components/Pages/Reviews/Reviews";
 import Solutions from "@/components/Pages/Solutions/Solutions";
 
 export default function Home() {
+
+  throw new Error("new error");
+  
+
   return (
     <main>
       <Banner />
