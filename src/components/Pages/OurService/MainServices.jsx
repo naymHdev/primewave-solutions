@@ -45,7 +45,7 @@ const MainServices = () => {
                 {service.features.map((feature, index) => (
                   <>
                     <hr />
-                    <p key={index} className="font-medium list-none">
+                    <p key={index + 1} className="font-medium list-none">
                       {feature}
                     </p>
                   </>
