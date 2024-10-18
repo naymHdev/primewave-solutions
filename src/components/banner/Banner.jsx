@@ -8,81 +8,9 @@ const Banner = () => {
 
   return (
     <>
-      <div className="relative">
-        <div className=" flex items-center overflow-hidden">
-          <video
-            className="w-full h-screen"
-            preload="metadata"
-            autoPlay
-            muted
-            loop
-            loading="lazy"
-          >
-            <source src="/videos/bannerbg.mp4" type="video/mp4" />
-            <source src="/videos/bannerbg.webm" type="video/webm" />
-            <track
-              src="/path/to/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-          </video>
-          <video
-            className="w-full h-screen"
-            preload="metadata"
-            autoPlay
-            muted
-            loop
-            loading="lazy"
-          >
-            <source src="/videos/bannerbg.mp4" type="video/mp4" />
-            <source src="/videos/bannerbg.webm" type="video/webm" />
-            <track
-              src="/path/to/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-          </video>
-          <video
-            className="w-full h-screen"
-            preload="metadata"
-            autoPlay
-            muted
-            loop
-            loading="lazy"
-          >
-            <source src="/videos/bannerbg.mp4" type="video/mp4" />
-            <source src="/videos/bannerbg.webm" type="video/webm" />
-            <track
-              src="/path/to/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-          </video>
-          <video
-            className="w-full h-screen"
-            preload="metadata"
-            autoPlay
-            muted
-            loop
-            loading="lazy"
-          >
-            <source src="/videos/bannerbg.mp4" type="video/mp4" />
-            <source src="/videos/bannerbg.webm" type="video/webm" />
-            <track
-              src="/path/to/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-          </video>
-        </div>
-
-        {/* Banner Text Section */}
+      <div className="relative bg-gradient-to-b to-white via-secondary from-secondary">
         <ResponsiveContainer>
-          <div className="absolute top-0 py-10 lg:py-28 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="py-10 lg:py-20 grid grid-cols-1 md:grid-cols-2">
             <section>
               <div>
                 <h1 className="text-4xl md:text-5xl leading-8 text-white font-black">
@@ -143,7 +71,7 @@ const Banner = () => {
                   100% Money Back Guarantee
                 </h3>
               </div>
-              <div className="lg:mt-10 mt-6 hidden lg:flex items-center text-white space-x-2">
+              <div className="mt-6 hidden lg:flex items-center text-white space-x-2">
                 <h2 className="text-sm font-bold">
                   Top Rated Agency {currentYear}
                 </h2>
