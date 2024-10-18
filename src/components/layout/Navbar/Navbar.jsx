@@ -35,12 +35,7 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.div
-        className="bg-secondary"
-        initial={{ y: "-100%" }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5, ease: easeInOut }}
-      >
+      <motion.div className="bg-secondary">
         <ResponsiveContainer>
           <nav>
             <div className="flex justify-between items-center h-20">
