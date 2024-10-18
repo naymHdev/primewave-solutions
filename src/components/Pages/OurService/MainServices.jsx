@@ -8,12 +8,19 @@ const MainServices = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-        {services?.map((service) => (
+        {services?.map((service, index) => (
           <motion.div
             key={service.id}
             className="relative border p-8 border-secondary overflow-hidden"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 200 }}
+            initial={{ opacity: 0, y: 20 }} // Initial state for staggered loading
+            animate={{ opacity: 1, y: 0 }} // Animate to visible and in place
+            transition={{
+              delay: index * 0.1, // Staggered delay based on card index
+              duration: 0.5, // Animation duration
+              type: "spring", // Spring animation for smooth easing
+              stiffness: 200, // Adjust stiffness for desired bounce effect
+            }}
+            whileHover={{ scale: 1.05 }} // Hover animation for scale
           >
             <div>
               <Image
